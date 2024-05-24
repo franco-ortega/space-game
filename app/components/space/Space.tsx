@@ -14,14 +14,13 @@ const radGrad1 =
 const radGrad2 =
   'radial-gradient(1px 1px at 50px 25px, var(--white-one), var(--white-transparent))';
 
-const radGradList = [createStar(), createStar(), createStar()];
+const radGradList = [];
 
 do {
   radGradList.push(createStar());
 } while (radGradList.length < 100);
 
 const radGradItems = radGradList.reduce((a, c) => a + ', ' + c);
-// console.log(radGradItems);
 
 function createStar() {
   /* generates a random positive integer between 1 and max */
