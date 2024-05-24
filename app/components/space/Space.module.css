@@ -17,7 +17,7 @@
 
   border: 2px dashed white;
 
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
       1px 1px at 25px 5px,
       var(--white-one),
       var(--white-transparent)
@@ -76,7 +76,7 @@
       2.5px 2.5px at 3% 16%,
       var(--white-one),
       var(--white-transparent)
-    );
+    ); */
 
   /* background-image: radial-gradient(
       1px 1px at 5% 3%,

@@ -14,18 +14,22 @@ const radGrad1 =
 const radGrad2 =
   'radial-gradient(1px 1px at 50px 25px, var(--white-one), var(--white-transparent))';
 
-const radGradList = [radGrad1, radGrad2, createStar()];
+const radGradList = [createStar(), createStar(), createStar()];
+
+do {
+  radGradList.push(createStar());
+} while (radGradList.length < 100);
 
 const radGradItems = radGradList.reduce((a, c) => a + ', ' + c);
 // console.log(radGradItems);
 
 function createStar() {
+  /* generates a random positive integer between 1 and max */
   function randomNumberGenerator(max: number) {
-    /* generates a random positive integer between 1 and max */
     return Math.floor(Math.random() * max) + 1;
   }
 
-  let size = randomNumberGenerator(5);
+  let size = randomNumberGenerator(3);
   let xPosition = randomNumberGenerator(99);
   let yPosition = randomNumberGenerator(99);
 
@@ -33,8 +37,6 @@ function createStar() {
 
   return star;
 }
-
-// const radialGradient = `radial-gradient(1px 1px at 25px 5px, var(--white-one), var(--white-transparent)), radial-gradient(1px 1px at 50px 25px, var(--white-one), var(--white-transparent))`;
 
 export default function Space({ children }: Props) {
   return (
