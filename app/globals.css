@@ -9,6 +9,13 @@
   --purple-hue: 300;
   --purple-sat: 100%;
   --purple-light: 25%;
+
+  --opacity-100: 1;
+  --opacity-90: 0.9;
+  --opacity-75: 0.75;
+  --opacity-50: 0.5;
+  --opacity-25: 0.25;
+  --opacity-10: 0.1;
 }
 
 @media (prefers-color-scheme: dark) {
