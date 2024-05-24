@@ -5,9 +5,35 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
+  --opacity-100: 1;
+  --opacity-90: 0.9;
+  --opacity-75: 0.75;
+  --opacity-50: 0.5;
+  --opacity-25: 0.25;
+  --opacity-10: 0.1;
+  --opacity-0: 0;
+
+  --hue-0: 0;
+  --sat-0: 0%;
+  --light-0: 0%;
+  --light-100: 100%;
+
   --black-one: hsl(0, 0%, 0%);
   --black-two: hsl(0, 0%, 10%);
   --black-three: hsl(0, 0%, 20%);
+
+  --test: hsla(0, 0%, 100%, 0);
+  --black-hue: 0;
+  --black-sat: 0;
+  --black-light: 25%;
+
+  --white-one: hsl(0, 0%, 100%);
+  --white-transparent: hsl(
+    var(--hue-0),
+    var(--sat-0),
+    var(--light-100),
+    var(--opacity-0)
+  );
 
   --navy-one: hsl(240, 100%, 25%);
   --navy-two: hsl(240, 100%, 30%);
@@ -17,13 +43,6 @@
   --purple-hue: 300;
   --purple-sat: 100%;
   --purple-light: 25%;
-
-  --opacity-100: 1;
-  --opacity-90: 0.9;
-  --opacity-75: 0.75;
-  --opacity-50: 0.5;
-  --opacity-25: 0.25;
-  --opacity-10: 0.1;
 }
 
 @media (prefers-color-scheme: dark) {

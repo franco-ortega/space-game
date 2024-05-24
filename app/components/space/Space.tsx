@@ -6,8 +6,7 @@ type Props = { children: ReactNode };
 export default function Space({ children }: Props) {
   return (
     <div className={styles.Space}>
-      Space
-      {children}
+      <div>{children}</div>
     </div>
   );
 }
