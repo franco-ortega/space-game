@@ -9,6 +9,10 @@
   --black-two: hsl(0, 0%, 10%);
   --black-three: hsl(0, 0%, 20%);
 
+  --navy-one: hsl(240, 100%, 25%);
+  --navy-two: hsl(240, 100%, 30%);
+  --navy-three: hsl(240, 100%, 35%);
+
   --purple: hsl(300, 100%, 25%);
   --purple-hue: 300;
   --purple-sat: 100%;
