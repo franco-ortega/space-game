@@ -3,10 +3,46 @@ import styles from './Space.module.css';
 
 type Props = { children: ReactNode };
 
+// background-image: radial-gradient(
+//   1px 1px at 25px 5px,
+//   var(--white-one),
+//   var(--white-transparent)
+// ),
+
+const radGrad1 =
+  'radial-gradient(1px 1px at 25px 5px, var(--white-one), var(--white-transparent))';
+const radGrad2 =
+  'radial-gradient(1px 1px at 50px 25px, var(--white-one), var(--white-transparent))';
+
+const radGradList = [radGrad1, radGrad2, createStar()];
+
+const radGradItems = radGradList.reduce((a, c) => a + ', ' + c);
+console.log(radGradItems);
+
+function createStar() {
+  let width = 5;
+  let height = 5;
+  let xPosition = 20;
+  let yPosition = 20;
+
+  const star = `radial-gradient(${width}px ${height}px at ${xPosition}% ${yPosition}%, var(--white-one), var(--white-transparent))`;
+
+  return star;
+}
+
+// const radialGradient = `radial-gradient(1px 1px at 25px 5px, var(--white-one), var(--white-transparent)), radial-gradient(1px 1px at 50px 25px, var(--white-one), var(--white-transparent))`;
+
 export default function Space({ children }: Props) {
   return (
     <div className={styles.Space}>
-      <div>{children}</div>
+      <div
+        style={{
+          color: 'red',
+          backgroundImage: radGradItems,
+        }}
+      >
+        {children}
+      </div>
     </div>
   );
 }
