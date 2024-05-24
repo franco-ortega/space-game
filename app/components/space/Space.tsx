@@ -17,15 +17,19 @@ const radGrad2 =
 const radGradList = [radGrad1, radGrad2, createStar()];
 
 const radGradItems = radGradList.reduce((a, c) => a + ', ' + c);
-console.log(radGradItems);
+// console.log(radGradItems);
 
 function createStar() {
-  let width = 5;
-  let height = 5;
-  let xPosition = 20;
-  let yPosition = 20;
+  function randomNumberGenerator(max: number) {
+    /* generates a random positive integer between 1 and max */
+    return Math.floor(Math.random() * max) + 1;
+  }
 
-  const star = `radial-gradient(${width}px ${height}px at ${xPosition}% ${yPosition}%, var(--white-one), var(--white-transparent))`;
+  let size = randomNumberGenerator(5);
+  let xPosition = randomNumberGenerator(99);
+  let yPosition = randomNumberGenerator(99);
+
+  const star = `radial-gradient(${size}px ${size}px at ${xPosition}% ${yPosition}%, var(--white-one), var(--white-transparent))`;
 
   return star;
 }
