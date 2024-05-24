@@ -29,7 +29,7 @@ function createStar() {
     return Math.floor(Math.random() * max) + 1;
   }
 
-  let size = randomNumberGenerator(3);
+  let size = randomNumberGenerator(2);
   let xPosition = randomNumberGenerator(99);
   let yPosition = randomNumberGenerator(99);
 
