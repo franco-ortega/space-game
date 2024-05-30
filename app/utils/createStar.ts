@@ -1,11 +1,11 @@
-import randomNumber from "./randomNumber";
+import { randomInteger } from "./randomNumber";
 
 export function starPosition() {
-  return randomNumber(5, 95);
+  return randomInteger(5, 95);
 };
 
 export function starSize() {
-  return randomNumber(1, 2);
+  return randomInteger(1, 2);
 };
 
 export default function createStar() {
