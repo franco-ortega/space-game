@@ -7,7 +7,5 @@ export default function createSpace(stars: number = 100) {
 	starList.push(createStar());
 };
 
-const space = starList.reduce((a, c) => a + ', ' + c);
-
-return space;
+return starList.reduce((a, c) => a + ', ' + c);
 };
