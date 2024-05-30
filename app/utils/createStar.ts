@@ -1,10 +1,10 @@
 import { randomInteger } from "./randomNumber";
 
-export function starPosition() {
+function starPosition() {
   return randomInteger(1, 99);
 };
 
-export function starSize() {
+function starSize() {
   return randomInteger(1, 2);
 };
 
