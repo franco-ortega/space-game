@@ -1,17 +1,14 @@
 .Space {
-  height: 100%;
+	height: 100%;
 
-  background: radial-gradient(
-    circle at center,
-    var(--navy-one) 20%,
-    var(--black-one) 120%
-  );
-
-  /* position: absolute;
-  inset: 0; */
+	background: radial-gradient(
+		circle at center,
+		var(--navy-one) 20%,
+		var(--black-one) 120%
+	);
 }
 
 .Space div {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
