@@ -19,13 +19,12 @@
 
 		padding: 1rem;
 
-		color: var(--white-one);
-
 		& > h1 {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 
+			color: var(--white-one);
 			font-size: 1.5rem;
 			font-weight: 500;
 		}
@@ -34,6 +33,7 @@
 	& > section:last-child {
 		border-radius: inherit;
 		padding: 1rem;
+
 		text-align: center;
 
 		& > button {

@@ -11,7 +11,6 @@ export default function Space({ children }: Props) {
 		<div className={styles.Space}>
 			<div
 				style={{
-					color: 'red',
 					backgroundImage: space,
 				}}
 			>
