@@ -1,3 +1,5 @@
+import Game from '../components/game/Game';
+
 export default function GamePage() {
-	return <div>GAME PAGE</div>;
+	return <Game />;
 }
