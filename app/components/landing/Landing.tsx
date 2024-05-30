@@ -4,14 +4,19 @@ type Props = {};
 
 function Landing({}: Props) {
 	return (
-		<div className={styles.Landing}>
-			<h1>
-				<span>Welcome</span>
-				<span>to</span>
-				<span>the</span>
-				<span>Space Game</span>
-			</h1>
-		</div>
+		<main className={styles.Landing}>
+			<section>
+				<h1>
+					<span>Welcome</span>
+					<span>to</span>
+					<span>the</span>
+					<span>Space Game</span>
+				</h1>
+			</section>
+			<section>
+				<button>Click to Play</button>
+			</section>
+		</main>
 	);
 }
 
