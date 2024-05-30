@@ -1,17 +1,10 @@
 import React, { ReactNode } from 'react';
 import styles from './Space.module.css';
-import randomNumber from '@/app/utils/randomNumber';
-import createStar from '@/app/utils/createStar';
+import createSpace from '@/app/utils/createSpace';
 
 type Props = { children: ReactNode };
 
-const radGradList = [];
-
-do {
-	radGradList.push(createStar());
-} while (radGradList.length < 100);
-
-const radGradItems = radGradList.reduce((a, c) => a + ', ' + c);
+const space = createSpace();
 
 export default function Space({ children }: Props) {
 	return (
@@ -19,7 +12,7 @@ export default function Space({ children }: Props) {
 			<div
 				style={{
 					color: 'red',
-					backgroundImage: radGradItems,
+					backgroundImage: space,
 				}}
 			>
 				{children}
