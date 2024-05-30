@@ -10,7 +10,12 @@
 	}
 
 	& > section:first-child {
-		background-color: hsl(170, 75%, 70%, 0.75);
+		background-color: hsl(
+			var(--teal-light-hue),
+			var(--sat-75),
+			var(--light-70),
+			var(--opacity-75)
+		);
 
 		padding: 1rem;
 
