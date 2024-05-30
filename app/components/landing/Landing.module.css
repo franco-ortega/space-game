@@ -34,12 +34,11 @@
 		& > button {
 			border-radius: inherit;
 			background: linear-gradient(
-				180deg,
-				hsl(var(--blue-hue), var(--blue-sat), var(--light-30)),
-				hsl(var(--blue-hue), var(--blue-sat), var(--light-40)),
-				hsl(var(--blue-hue), var(--blue-sat), var(--light-50)),
-				hsl(var(--blue-hue), var(--blue-sat), var(--light-60)),
-				hsl(var(--blue-hue), var(--blue-sat), var(--light-70))
+				0deg,
+				hsl(var(--blue-hue), var(--sat-100), var(--light-30)),
+				hsl(var(--blue-hue), var(--sat-100), var(--light-40)),
+				hsl(var(--blue-hue), var(--sat-100), var(--light-50)),
+				hsl(var(--blue-hue), var(--sat-100), var(--light-60))
 			);
 
 			padding: 5px 10px;
