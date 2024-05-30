@@ -5,19 +5,16 @@
 	margin-inline: auto;
 	padding: 1rem;
 
-	color: var(--white-one);
-
-	outline: var(--test-outline);
-
 	& > section {
-		outline: var(--test-outline);
+		border-radius: inherit;
 	}
 
 	& > section:first-child {
-		background-color: hsl(172, 76%, 69%, 0.75);
-		border-radius: inherit;
+		background-color: hsl(170, 75%, 70%, 0.75);
 
 		padding: 1rem;
+
+		color: var(--white-one);
 
 		& > h1 {
 			display: flex;
@@ -33,11 +30,29 @@
 		border-radius: inherit;
 		padding: 1rem;
 		text-align: center;
-		/* outline: var(--test-outline); */
 
 		& > button {
 			border-radius: inherit;
+			background: linear-gradient(
+				180deg,
+				hsl(var(--blue-hue), var(--blue-sat), var(--light-30)),
+				hsl(var(--blue-hue), var(--blue-sat), var(--light-40)),
+				hsl(var(--blue-hue), var(--blue-sat), var(--light-50)),
+				hsl(var(--blue-hue), var(--blue-sat), var(--light-60)),
+				hsl(var(--blue-hue), var(--blue-sat), var(--light-70))
+			);
+
 			padding: 5px 10px;
+
+			color: hsl(var(--hue-0), var(--sat-0), var(--light-85));
 		}
+	}
+}
+
+.Landing {
+	outline: var(--test-outline);
+
+	& > section {
+		outline: var(--test-outline);
 	}
 }
