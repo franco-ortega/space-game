@@ -4,7 +4,7 @@ import createSpace from '@/app/utils/createSpace';
 
 type Props = { children: ReactNode };
 
-const space = createSpace();
+const space = createSpace(500);
 
 export default function Space({ children }: Props) {
 	return (

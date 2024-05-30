@@ -1,7 +1,7 @@
 import { randomInteger } from "./randomNumber";
 
 export function starPosition() {
-  return randomInteger(5, 95);
+  return randomInteger(1, 99);
 };
 
 export function starSize() {
