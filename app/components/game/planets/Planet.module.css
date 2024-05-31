@@ -12,9 +12,13 @@
 
 .Planet > div {
 	border-radius: 0.25rem;
+
 	width: fit-content;
 	margin: auto;
+	padding-block: 2px;
+	padding-inline: 2px 4px;
 
 	color: var(--white-one);
 	font-style: italic;
+	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-10));
 }
