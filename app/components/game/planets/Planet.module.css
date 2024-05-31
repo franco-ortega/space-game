@@ -1,3 +1,7 @@
+.PlanetWrapper {
+	/* background-color: gold; */
+}
+
 .Planet {
 	background-color: red;
 	border-radius: 100rem;

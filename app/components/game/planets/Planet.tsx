@@ -1,4 +1,5 @@
 import styles from './Planet.module.css';
+import Ring from './Ring';
 
 type Props = {
 	name: string;
@@ -10,10 +11,18 @@ type Props = {
 export default function Planet({ name, color, column, row }: Props) {
 	return (
 		<div
-			className={styles.Planet}
-			style={{ backgroundColor: color, gridColumn: column, gridRow: row }}
+			className={styles.PlanetWrapper}
+			style={{ gridColumn: column, gridRow: row }}
 		>
-			<div>{name.toUpperCase()}</div>
+			<Ring>
+				<Ring>
+					<Ring>
+						<div className={styles.Planet} style={{ backgroundColor: color }}>
+							<div>{name.toUpperCase()}</div>
+						</div>
+					</Ring>
+				</Ring>
+			</Ring>
 		</div>
 	);
 }
