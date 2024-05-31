@@ -4,8 +4,8 @@ import GameGrid from '../components/game/GameGrid';
 export default function GamePage() {
 	return (
 		<>
-			{/* <Game /> */}
 			<GameGrid />
+			{/* <Game /> */}
 		</>
 	);
 }

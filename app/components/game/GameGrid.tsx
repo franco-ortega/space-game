@@ -18,7 +18,7 @@ export default function GameGrid({}: Props) {
 					column={'2 / 4'}
 					row={'2 / 4'}
 				/>
-				<GridPlanet name={'Eob'} color={'red'} column={'5 / 7'} row={'5 / 7'} />
+				<GridPlanet name={'Eob'} color={'red'} column={'5 / 8'} row={'5 / 8'} />
 				<GridPlanet
 					name={'Iob'}
 					color={'blue'}
@@ -28,14 +28,14 @@ export default function GameGrid({}: Props) {
 				<GridPlanet
 					name={'Uob'}
 					color={'aqua'}
-					column={'3 / 5'}
-					row={'11 / 13'}
+					column={'2 / 6'}
+					row={'9 / 13'}
 				/>
 				<GridPlanet
 					name={'Zob'}
 					color={'lightgray'}
-					column={'6 / 8'}
-					row={'14 / 16'}
+					column={'6 / 9'}
+					row={'13 / 16'}
 				/>
 				<GridPlanet
 					name={'Gob'}
