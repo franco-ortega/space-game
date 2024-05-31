@@ -1,31 +1,27 @@
-.PlanetWrapper {
-	background-color: hsl(51, 100%, 50%, 0.5);
-	position: relative;
+.GridPlanetWrapper {
+	/* background-color: hsl(51, 100%, 50%, 0.5); */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.Planet {
-	background-color: red;
+.GridPlanet {
 	border-radius: 100rem;
-	width: 10vw;
+	height: 90%;
 	aspect-ratio: 1 / 1;
 
-	align-self: center;
-	justify-self: center;
-
-	position: absolute;
 	display: flex;
 }
 
-.Planet > div {
+.GridPlanet > div {
 	border-radius: 0.25rem;
 
-	width: fit-content;
 	margin: auto;
 	padding-block: 2px;
 	padding-inline: 2px 4px;
 
 	color: var(--white-one);
-	font-size: 2vw;
+	font-size: 1rem;
 	font-style: italic;
 	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-20));
 }

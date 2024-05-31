@@ -1,8 +1,6 @@
-import Link from 'next/link';
-import styles from './Game.module.css';
+import Planet from '../planets/Planet';
 import LinkButton from '../links/LinkButton';
-import Planet from './planets/Planet';
-import Ring from './planets/Ring';
+import styles from './Game.module.css';
 
 type Props = {};
 
@@ -20,6 +18,7 @@ function Game({}: Props) {
 					right={'0%'}
 					bottom={'0%'}
 					left={'10%'}
+					width={'10vw'}
 				/>
 				<Planet
 					name={'Eob'}
@@ -28,6 +27,7 @@ function Game({}: Props) {
 					right={'0%'}
 					bottom={'0%'}
 					left={'20%'}
+					width={'15vw'}
 				/>
 				<Planet
 					name={'Iob'}
@@ -36,6 +36,7 @@ function Game({}: Props) {
 					right={'0%'}
 					bottom={'0%'}
 					left={'40%'}
+					width={'5vw'}
 				/>
 				<Planet
 					name={'Uob'}
@@ -44,6 +45,7 @@ function Game({}: Props) {
 					right={'0%'}
 					bottom={'0%'}
 					left={'80%'}
+					width={'10vw'}
 				/>
 				<Planet
 					name={'Zob'}
@@ -52,6 +54,7 @@ function Game({}: Props) {
 					right={'0%'}
 					bottom={'0%'}
 					left={'60%'}
+					width={'8vw'}
 				/>
 				<Planet
 					name={'Gob'}
@@ -60,6 +63,7 @@ function Game({}: Props) {
 					right={'0%'}
 					bottom={'0%'}
 					left={'75%'}
+					width={'12vw'}
 				/>
 			</section>
 			{/* <section>

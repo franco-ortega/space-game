@@ -8,6 +8,7 @@ type Props = {
 	right: string;
 	bottom: string;
 	left: string;
+	width: string;
 };
 
 export default function Planet({
@@ -17,18 +18,22 @@ export default function Planet({
 	right,
 	bottom,
 	left,
+	width,
 }: Props) {
 	return (
 		<div className={styles.PlanetWrapper} style={{ top, right, bottom, left }}>
-			{/* <Ring>
+			<Ring>
 				<Ring>
-					<Ring> */}
-			<div className={styles.Planet} style={{ backgroundColor: color }}>
-				<div>{name.toUpperCase()}</div>
-			</div>
-			{/* </Ring>
+					<Ring>
+						<div
+							className={styles.Planet}
+							style={{ backgroundColor: color, width }}
+						>
+							<div>{name.toUpperCase()}</div>
+						</div>
+					</Ring>
 				</Ring>
-			</Ring> */}
+			</Ring>
 		</div>
 	);
 }
