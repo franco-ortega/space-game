@@ -1,16 +1,18 @@
 .PlanetWrapper {
-	/* background-color: gold; */
+	background-color: hsl(51, 100%, 50%, 0.5);
+	position: relative;
 }
 
 .Planet {
 	background-color: red;
 	border-radius: 100rem;
-	width: 90%;
+	width: 10vw;
 	aspect-ratio: 1 / 1;
 
 	align-self: center;
 	justify-self: center;
 
+	position: absolute;
 	display: flex;
 }
 
@@ -23,6 +25,7 @@
 	padding-inline: 2px 4px;
 
 	color: var(--white-one);
+	font-size: 2vw;
 	font-style: italic;
 	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-20));
 }
