@@ -5,33 +5,33 @@
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: repeat(20, 1fr);
+}
 
-	& > header {
-		grid-column: 1 / 11;
-		grid-row: 1 / 3;
-		align-self: center;
-		justify-self: center;
+.Game > header {
+	grid-column: 1 / 11;
+	grid-row: 1 / 3;
+	align-self: center;
+	justify-self: center;
+}
 
-		& > h1 {
-			color: var(--white-one);
-			font-weight: 600;
-			font-style: italic;
-		}
-	}
+.Game > header > h1 {
+	color: var(--white-one);
+	font-weight: 600;
+	font-style: italic;
+}
 
-	& > section {
-		background-color: hsl(350, 100%, 88%, 0.25);
+.Game > section {
+	background-color: hsl(350, 100%, 88%, 0.25);
 
-		grid-column: 2 / 10;
-		grid-row: 3 / 19;
-	}
+	grid-column: 2 / 10;
+	grid-row: 3 / 19;
+}
 
-	& > footer {
-		border-radius: 1rem;
-		width: 100%;
-		position: absolute;
-		bottom: 5%;
+.Game > footer {
+	border-radius: 1rem;
+	width: 100%;
+	position: absolute;
+	bottom: 5%;
 
-		text-align: center;
-	}
+	text-align: center;
 }
