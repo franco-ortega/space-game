@@ -24,7 +24,7 @@ function Game({}: Props) {
 				/>
 				<Planet
 					name={'Gob'}
-					color={'purple'}
+					color={'violet'}
 					column={'4 / 6'}
 					row={'17 / 19'}
 				/>

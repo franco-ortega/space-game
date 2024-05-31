@@ -20,5 +20,5 @@
 
 	color: var(--white-one);
 	font-style: italic;
-	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-10));
+	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-20));
 }
