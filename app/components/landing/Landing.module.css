@@ -38,33 +38,6 @@
 		border-radius: inherit;
 		padding: 1rem;
 		text-align: center;
-
-		& > a {
-			border-radius: inherit;
-
-			& > span {
-				border-radius: inherit;
-				border-style: solid;
-				border-width: 2px;
-
-				display: inline-block;
-
-				background: linear-gradient(
-					0deg,
-					hsl(var(--blue-hue), var(--sat-100), var(--light-30)),
-					hsl(var(--blue-hue), var(--sat-100), var(--light-40)),
-					hsl(var(--blue-hue), var(--sat-100), var(--light-50)),
-					hsl(var(--blue-hue), var(--sat-100), var(--light-60))
-				);
-
-				border-color: var(--white-one);
-
-				padding: 4px 10px;
-
-				color: hsl(var(--hue-0), var(--sat-0), var(--light-85));
-				font-size: 1rem;
-			}
-		}
 	}
 }
 
