@@ -6,4 +6,15 @@
 
 	align-self: center;
 	justify-self: center;
+
+	display: flex;
+}
+
+.Planet > div {
+	border-radius: 0.25rem;
+	width: fit-content;
+	margin: auto;
+
+	color: var(--white-one);
+	font-style: italic;
 }

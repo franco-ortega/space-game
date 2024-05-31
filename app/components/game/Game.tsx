@@ -17,6 +17,7 @@ function Game({}: Props) {
 				<Planet name={'Iob'} column={'8 / 10'} row={'8 / 10'} />
 				<Planet name={'Uob'} column={'3 / 5'} row={'11 / 13'} />
 				<Planet name={'Zob'} column={'6 / 8'} row={'14 / 16'} />
+				<Planet name={'Gob'} column={'4 / 6'} row={'17 / 19'} />
 			</section>
 			<footer>
 				<LinkButton src='/' text='Return' />
