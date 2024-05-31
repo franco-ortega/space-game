@@ -12,12 +12,22 @@ function Game({}: Props) {
 				<h1>SPACE GAME</h1>
 			</header>
 			<section>
-				<Planet name={'Aob'} column={'2 / 4'} row={'2 / 4'} />
-				<Planet name={'Eob'} column={'5 / 7'} row={'5 / 7'} />
-				<Planet name={'Iob'} column={'8 / 10'} row={'8 / 10'} />
-				<Planet name={'Uob'} column={'3 / 5'} row={'11 / 13'} />
-				<Planet name={'Zob'} column={'6 / 8'} row={'14 / 16'} />
-				<Planet name={'Gob'} column={'4 / 6'} row={'17 / 19'} />
+				<Planet name={'Aob'} color={'green'} column={'2 / 4'} row={'2 / 4'} />
+				<Planet name={'Eob'} color={'red'} column={'5 / 7'} row={'5 / 7'} />
+				<Planet name={'Iob'} color={'blue'} column={'8 / 10'} row={'8 / 10'} />
+				<Planet name={'Uob'} color={'aqua'} column={'3 / 5'} row={'11 / 13'} />
+				<Planet
+					name={'Zob'}
+					color={'lightgray'}
+					column={'6 / 8'}
+					row={'14 / 16'}
+				/>
+				<Planet
+					name={'Gob'}
+					color={'purple'}
+					column={'4 / 6'}
+					row={'17 / 19'}
+				/>
 			</section>
 			<footer>
 				<LinkButton src='/' text='Return' />
