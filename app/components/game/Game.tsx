@@ -10,6 +10,7 @@ function Game({}: Props) {
 			<header>
 				<h1>SPACE GAME</h1>
 			</header>
+			<section></section>
 			<footer>
 				<LinkButton src='/' text='Return' />
 			</footer>
