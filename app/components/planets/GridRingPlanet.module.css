@@ -1,0 +1,12 @@
+.GridRingPlanet {
+	/* background-color: hsl(60, 100%, 50%, 0.5); */
+
+	grid-column: 6/ 10;
+	grid-row: 2/ 5;
+
+	border-radius: 100rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
