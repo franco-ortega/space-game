@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import styles from './Landing.module.css';
+import LinkButton from '../links/LinkButton';
 
 type Props = {};
 
@@ -14,7 +16,7 @@ function Landing({}: Props) {
 				</h1>
 			</section>
 			<section>
-				<button>Click to Play</button>
+				<LinkButton src='/game' text='Click to Play' />
 			</section>
 		</main>
 	);
