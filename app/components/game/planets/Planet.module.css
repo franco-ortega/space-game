@@ -1,0 +1,9 @@
+.Planet {
+	background-color: red;
+	border-radius: 100rem;
+	width: 90%;
+	aspect-ratio: 1 / 1;
+
+	align-self: center;
+	justify-self: center;
+}

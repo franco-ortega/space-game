@@ -25,6 +25,10 @@
 
 	grid-column: 2 / 10;
 	grid-row: 3 / 19;
+
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(20, 1fr);
 }
 
 .Game > footer {
