@@ -6,19 +6,11 @@
 		var(--navy-one) 20%,
 		var(--black-one) 120%
 	);
-
-	& > div {
-		width: 100%;
-		height: 100%;
-
-		display: flex;
-
-		/* position: relative; */
-		/* inset: 0; */
-	}
 }
-/* 
+
 .Space > div {
 	width: 100%;
 	height: 100%;
-} */
+
+	display: flex;
+}

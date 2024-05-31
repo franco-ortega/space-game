@@ -6,19 +6,11 @@
 	padding: 1rem;
 }
 
-/* .Landing {
-	outline: var(--test-outline);
-
-	& > section {
-		outline: var(--test-outline);
-	}
-} */
-
-.Landing section {
+.Landing > section {
 	border-radius: inherit;
 }
 
-.Landing section:first-child {
+.Landing > section:first-child {
 	border-color: var(--white-one);
 	border-style: solid;
 	border-width: 2px;
@@ -33,7 +25,7 @@
 	padding: 1rem;
 }
 
-.Landing section h1 {
+.Landing > section:first-child > h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -48,3 +40,11 @@
 	padding: 1rem;
 	text-align: center;
 }
+
+/* .Landing {
+	outline: var(--test-outline);
+
+	& > section {
+		outline: var(--test-outline);
+	}
+} */
