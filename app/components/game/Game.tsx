@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Game.module.css';
+import LinkButton from '../links/LinkButton';
 
 type Props = {};
 
@@ -10,9 +11,7 @@ function Game({}: Props) {
 				<h1>SPACE GAME</h1>
 			</header>
 			<footer>
-				<Link href={'/'}>
-					<span>Return</span>
-				</Link>
+				<LinkButton src='/' text='Return' />
 			</footer>
 		</main>
 	);
