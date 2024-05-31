@@ -28,10 +28,10 @@
 }
 
 .Game > footer {
-	border-radius: 1rem;
-	width: 100%;
-	position: absolute;
-	bottom: 5%;
+	grid-column: 1 / 11;
+	grid-row: 19 / 21;
+	align-self: center;
+	justify-self: center;
 
-	text-align: center;
+	border-radius: 1rem;
 }
