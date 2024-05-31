@@ -12,11 +12,11 @@ function Game({}: Props) {
 				<h1>SPACE GAME</h1>
 			</header>
 			<section>
-				<Planet column={'2 / 4'} row={'2 / 4'} />
-				<Planet column={'5 / 7'} row={'5 / 7'} />
-				<Planet column={'8 / 10'} row={'8 / 10'} />
-				<Planet column={'3 / 5'} row={'11 / 13'} />
-				<Planet column={'6 / 8'} row={'14 / 16'} />
+				<Planet name={'Aob'} column={'2 / 4'} row={'2 / 4'} />
+				<Planet name={'Eob'} column={'5 / 7'} row={'5 / 7'} />
+				<Planet name={'Iob'} column={'8 / 10'} row={'8 / 10'} />
+				<Planet name={'Uob'} column={'3 / 5'} row={'11 / 13'} />
+				<Planet name={'Zob'} column={'6 / 8'} row={'14 / 16'} />
 			</section>
 			<footer>
 				<LinkButton src='/' text='Return' />

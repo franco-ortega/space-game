@@ -1,14 +1,15 @@
 import styles from './Planet.module.css';
 
 type Props = {
+	name: string;
 	column: string;
 	row: string;
 };
 
-export default function Planet({ column, row }: Props) {
+export default function Planet({ name, column, row }: Props) {
 	return (
 		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
-			Planet
+			{name.toUpperCase()}
 		</div>
 	);
 }
