@@ -33,7 +33,7 @@
 	padding: 1rem;
 }
 
-.Landing header > h1 {
+.Landing section h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
