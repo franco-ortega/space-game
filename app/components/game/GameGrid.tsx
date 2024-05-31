@@ -1,6 +1,7 @@
 import GridPlanet from '../planets/GridPlanet';
 import LinkButton from '../links/LinkButton';
 import styles from './GameGrid.module.css';
+import GridRingPlanet from '../planets/GridRingPlanet';
 
 type Props = {};
 
@@ -43,6 +44,7 @@ export default function GameGrid({}: Props) {
 					column={'4 / 6'}
 					row={'17 / 19'}
 				/>
+				<GridRingPlanet />
 			</section>
 			<footer>
 				<LinkButton src='/' text='Return' />

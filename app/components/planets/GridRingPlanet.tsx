@@ -1,20 +1,23 @@
-import { ReactNode } from 'react';
+import GridPlanet from './GridPlanet';
+import GridRing from './GridRing';
 import styles from './GridRingPlanet.module.css';
 
-type Props = { children: ReactNode };
+type Props = {};
+// type Props = { children: ReactNode };
 
-export default function GridRingPlanet({ children }: Props) {
+export default function GridRingPlanet({}: Props) {
 	return (
-		<div
-			className={styles.GridRingPlanet}
-			style={{
-				borderColor: 'pink',
-				borderWidth: '2px',
-				borderStyle: 'solid',
-				padding: '1vw',
-			}}
-		>
-			{children}
+		<div className={styles.GridRingPlanet}>
+			<GridRing>
+				<GridRing>
+					<GridPlanet
+						name={'Kob'}
+						color={'pink'}
+						column={'3 / 5'}
+						row={'4 / 6'}
+					/>
+				</GridRing>
+			</GridRing>
 		</div>
 	);
 }

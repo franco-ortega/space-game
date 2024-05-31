@@ -11,7 +11,7 @@ export default function GridRing({ children }: Props) {
 				borderColor: 'pink',
 				borderWidth: '2px',
 				borderStyle: 'solid',
-				padding: '1vw',
+				padding: '10px',
 			}}
 		>
 			{children}
