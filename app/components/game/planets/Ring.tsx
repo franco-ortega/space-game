@@ -11,7 +11,7 @@ export default function Ring({ children }: Props) {
 				borderColor: 'pink',
 				borderWidth: '2px',
 				borderStyle: 'solid',
-				padding: '3px',
+				padding: '1vw',
 			}}
 		>
 			{children}
