@@ -2,16 +2,24 @@
 	width: 100%;
 	height: 100%;
 
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(20, 1fr);
+	grid-template-rows: repeat(20, 1fr); */
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 2rem;
 }
 
 .Game > header {
-	grid-column: 1 / 11;
-	grid-row: 1 / 3;
-	align-self: center;
-	justify-self: center;
+	/* grid-column: 1 / 11;
+	grid-row: 1 / 3; */
+	/* align-self: center; */
+	/* justify-self: center; */
+	border-radius: 1rem;
 }
 
 .Game > header > h1 {
@@ -21,10 +29,14 @@
 }
 
 .Game > footer {
-	grid-column: 1 / 11;
-	grid-row: 19 / 21;
-	align-self: center;
-	justify-self: center;
+	/* grid-column: 1 / 11;
+	grid-row: 19 / 21; */
+	/* align-self: center; */
+	/* justify-self: center; */
 
 	border-radius: 1rem;
+}
+
+.Game > * {
+	/* outline: 2px dashed white; */
 }
