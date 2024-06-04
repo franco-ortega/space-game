@@ -9,7 +9,7 @@ function Game({}: Props) {
 	return (
 		<main className={styles.Game}>
 			<header>
-				<h1>space game</h1>
+				<h1>SPACE GAME</h1>
 			</header>
 
 			<footer>
