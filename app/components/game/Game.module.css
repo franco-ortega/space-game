@@ -20,20 +20,21 @@
 	font-style: italic;
 }
 
+/* 
 .Game > section {
 	background-color: hsl(350, 100%, 88%, 0.25);
 
 	grid-column: 2 / 10;
 	grid-row: 3 / 19;
 
-	/* display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(20, 1fr); */
+	// display: grid;
+	// grid-template-columns: repeat(10, 1fr);
+	// grid-template-rows: repeat(20, 1fr);
 
 	overflow: hidden;
 
 	position: relative;
-}
+} */
 
 .Game > footer {
 	grid-column: 1 / 11;
