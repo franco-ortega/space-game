@@ -7,4 +7,9 @@
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
 	grid-template-rows: repeat(40, 1fr);
+
+	@media (min-width: 500px) {
+		grid-template-columns: repeat(40, 1fr);
+		grid-template-rows: repeat(20, 1fr);
+	}
 }
