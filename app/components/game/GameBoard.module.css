@@ -1,0 +1,6 @@
+.GameBoard {
+	background-color: hsl(350, 100%, 88%, 0.2);
+
+	height: 100%;
+	width: 100%;
+}
