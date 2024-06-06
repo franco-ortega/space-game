@@ -11,6 +11,7 @@ function Game({}: Props) {
 			<header>
 				<h1>SPACE GAME</h1>
 			</header>
+			<div>GAME BOARD</div>
 
 			<footer>
 				<LinkButton src='/' text='Return' />
