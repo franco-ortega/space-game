@@ -34,6 +34,7 @@
 	/* align-self: center; */
 	/* justify-self: center; */
 
+	/* this passes down the border-radius inherited by the "Return" button */
 	border-radius: 1rem;
 }
 
