@@ -7,7 +7,7 @@ type Props = {};
 
 function Game({}: Props) {
 	return (
-		<main className={styles.Game}>
+		<div className={styles.Game}>
 			<header>
 				<h1>SPACE GAME</h1>
 			</header>
@@ -15,7 +15,7 @@ function Game({}: Props) {
 			<footer>
 				<LinkButton src='/' text='Return' />
 			</footer>
-		</main>
+		</div>
 	);
 }
 

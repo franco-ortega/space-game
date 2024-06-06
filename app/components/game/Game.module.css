@@ -37,6 +37,9 @@
 	border-radius: 1rem;
 }
 
-.Game > * {
-	/* outline: 2px dashed white; */
+.Game {
+	outline: 12px dashed white;
+	& > * {
+		outline: 2px dashed white;
+	}
 }
