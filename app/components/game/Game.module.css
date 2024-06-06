@@ -44,9 +44,3 @@
 		outline: 2px dashed white;
 	}
 }
-
-.Game > div {
-	background-color: red;
-	height: 100%;
-	width: 100%;
-}
