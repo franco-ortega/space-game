@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react';
 import styles from './Planet.module.css';
 
 type Props = {
@@ -8,11 +9,17 @@ type Props = {
 };
 
 export default function Planet({ name, color, column, row }: Props) {
+	const planetName = name.toUpperCase();
+
+	const planetBody = (
+		<div style={{ backgroundColor: color }}>
+			<div>{planetName}</div>
+		</div>
+	);
+
 	return (
 		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
-			<div style={{ backgroundColor: color }}>
-				<div>{name.toUpperCase()}</div>
-			</div>
+			{planetBody}
 		</div>
 	);
 }
