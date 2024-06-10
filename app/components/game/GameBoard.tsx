@@ -13,6 +13,13 @@ export default function GameBoard({}: Props) {
 				row={'2 / 8'}
 				ring={true}
 			/>
+			<Planet
+				name={'KOA'}
+				color={'lightgreen'}
+				column={'12 / 20'}
+				row={'10 / 18'}
+				ring={false}
+			/>
 		</main>
 	);
 }
