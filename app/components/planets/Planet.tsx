@@ -21,7 +21,13 @@ export default function Planet({ name, color, column, row, ring }: Props) {
 
 	return (
 		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
-			{ring ? <Ring>{planetBody}</Ring> : planetBody}
+			{ring ? (
+				<Ring>
+					<Ring>{planetBody}</Ring>
+				</Ring>
+			) : (
+				planetBody
+			)}
 		</div>
 	);
 }
