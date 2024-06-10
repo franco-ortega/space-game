@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import styles from './Planet.module.css';
+import Ring from '../rings/Ring';
 
 type Props = {
 	name: string;
@@ -12,14 +13,14 @@ export default function Planet({ name, color, column, row }: Props) {
 	const planetName = name.toUpperCase();
 
 	const planetBody = (
-		<div style={{ backgroundColor: color }}>
-			<div>{planetName}</div>
+		<div className={styles.PlanetBody} style={{ backgroundColor: color }}>
+			<div className={styles.PlanetName}>{planetName}</div>
 		</div>
 	);
 
 	return (
 		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
-			{planetBody}
+			<Ring>{planetBody}</Ring>
 		</div>
 	);
 }
