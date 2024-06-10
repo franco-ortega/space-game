@@ -1,59 +1,21 @@
 import styles from './Planet.module.css';
-import Ring from './Ring';
 
 type Props = {
 	name: string;
 	color: string;
-	top: string;
-	right: string;
-	bottom: string;
-	left: string;
-	width: string;
+	column: string;
+	row: string;
 };
 
-export default function Planet({
-	name,
-	color,
-	top,
-	right,
-	bottom,
-	left,
-	width,
-}: Props) {
+export default function Planet({ name, color, column, row }: Props) {
 	return (
-		<div className={styles.PlanetWrapper} style={{ top, right, bottom, left }}>
-			<Ring>
-				<Ring>
-					<Ring>
-						<div
-							className={styles.Planet}
-							style={{ backgroundColor: color, width }}
-						>
-							<div>{name.toUpperCase()}</div>
-						</div>
-					</Ring>
-				</Ring>
-			</Ring>
+		<div
+			className={styles.PlanetWrapper}
+			style={{ gridColumn: column, gridRow: row }}
+		>
+			<div className={styles.Planet} style={{ backgroundColor: color }}>
+				<div>{name.toUpperCase()}</div>
+			</div>
 		</div>
 	);
 }
-
-// export default function Planet({ name, color, column, row }: Props) {
-// 	return (
-// 		<div
-// 			className={styles.PlanetWrapper}
-// 			style={{ gridColumn: column, gridRow: row }
-//     }
-// 		>
-// 			<Ring>
-// 				<Ring>
-// 					<Ring>
-// 						<div className={styles.Planet} style={{ backgroundColor: color }}>
-// 							<div>{name.toUpperCase()}</div>
-// 						</div>
-// 					</Ring>
-// 				</Ring>
-// 			</Ring>
-// 		</div>
-// 	);
-// }
