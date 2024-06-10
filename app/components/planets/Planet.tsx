@@ -9,11 +9,8 @@ type Props = {
 
 export default function Planet({ name, color, column, row }: Props) {
 	return (
-		<div
-			className={styles.PlanetWrapper}
-			style={{ gridColumn: column, gridRow: row }}
-		>
-			<div className={styles.Planet} style={{ backgroundColor: color }}>
+		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
+			<div style={{ backgroundColor: color }}>
 				<div>{name.toUpperCase()}</div>
 			</div>
 		</div>
