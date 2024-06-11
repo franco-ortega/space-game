@@ -14,6 +14,7 @@ export default function GameBoard({}: Props) {
 					row: '2 / 8',
 				}}
 				ring={true}
+				rings={2}
 			/>
 			<Planet
 				name={'KOA'}
@@ -23,6 +24,7 @@ export default function GameBoard({}: Props) {
 					row: '10 / 18',
 				}}
 				ring={false}
+				rings={1}
 			/>
 		</main>
 	);

@@ -10,9 +10,16 @@ type Props = {
 	color: string;
 	gridLocation: GridLocation;
 	ring: boolean;
+	rings: number;
 };
 
-export default function Planet({ name, color, gridLocation, ring }: Props) {
+export default function Planet({
+	name,
+	color,
+	gridLocation,
+	ring,
+	rings,
+}: Props) {
 	const planetName = name.toUpperCase();
 	const { column, row } = gridLocation;
 
@@ -22,11 +29,10 @@ export default function Planet({ name, color, gridLocation, ring }: Props) {
 		</div>
 	);
 
-	const ringNumber = 2;
 	let count = 0;
 	let ringedPlanet: React.JSX.Element = planetBody;
 
-	while (count < ringNumber) {
+	while (count < rings) {
 		ringedPlanet = <Ring>{ringedPlanet}</Ring>;
 		count++;
 	}
