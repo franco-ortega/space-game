@@ -1,5 +1,3 @@
-'use client';
-
 import React, { ReactNode, useState } from 'react';
 import { GridLocation } from '@/app/types/types';
 import Ring from '../rings/Ring';
