@@ -1,4 +1,5 @@
 import Planet from '../planets/Planet';
+import PlanetContainer from '../planets/PlanetContainer';
 import styles from './GameBoard.module.css';
 
 type Props = {};
@@ -32,6 +33,17 @@ export default function GameBoard({}: Props) {
 					row: '3 / 9',
 				}}
 				rings={0}
+			/>
+			<PlanetContainer
+				planetData={{
+					name: 'ZOA',
+					color: 'orange',
+					coordinates: {
+						column: '16 / 23',
+						row: '3 / 9',
+					},
+					rings: 0,
+				}}
 			/>
 		</main>
 	);
