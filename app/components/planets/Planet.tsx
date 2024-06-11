@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { GridLocation } from '@/app/types/types';
 import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
@@ -7,10 +7,22 @@ type Props = {
 	name: string;
 	color: string;
 	gridLocation: GridLocation;
-	ring: boolean;
+	rings: number;
 };
 
-export default function Planet({ name, color, gridLocation, ring }: Props) {
+function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
+	let count = 0;
+	let ringedPlanet = planet;
+
+	while (count < amount) {
+		ringedPlanet = <Ring>{ringedPlanet}</Ring>;
+		count++;
+	}
+
+	return ringedPlanet;
+}
+
+export default function Planet({ name, color, gridLocation, rings }: Props) {
 	const planetName = name.toUpperCase();
 	const { column, row } = gridLocation;
 
@@ -20,15 +32,11 @@ export default function Planet({ name, color, gridLocation, ring }: Props) {
 		</div>
 	);
 
+	const planet = rings ? addRingsToPlanet(planetBody, rings) : planetBody;
+
 	return (
 		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
-			{ring ? (
-				<Ring>
-					<Ring>{planetBody}</Ring>
-				</Ring>
-			) : (
-				planetBody
-			)}
+			{planet}
 		</div>
 	);
 }
