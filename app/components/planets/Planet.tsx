@@ -10,13 +10,12 @@ type Props = {
 	rings: number;
 };
 
-function addRingsToPlanet(ring: React.JSX.Element, amount: number) {
+function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
 	let count = 0;
-	let ringedPlanet = ring;
+	let ringedPlanet = planet;
 
 	while (count < amount) {
 		ringedPlanet = <Ring>{ringedPlanet}</Ring>;
-		console.log(count);
 		count++;
 	}
 
