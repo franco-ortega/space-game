@@ -2,9 +2,11 @@ import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
 
 type Props = {
-	name: string;
-	color: string;
-	rings: number;
+	planetDetails: {
+		name: string;
+		color: string;
+		rings: number;
+	};
 };
 
 function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
@@ -19,7 +21,8 @@ function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
 	return ringedPlanet;
 }
 
-export default function Planet({ name, color, rings }: Props) {
+export default function Planet({ planetDetails }: Props) {
+	const { name, color, rings } = planetDetails;
 	const planetName = name.toUpperCase();
 
 	const planetBody = (
