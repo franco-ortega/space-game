@@ -1,3 +1,4 @@
 export type GridLocation = {
-  column: string
+  column: string;
+  row: string;
 };
