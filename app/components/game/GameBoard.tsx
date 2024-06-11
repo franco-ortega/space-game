@@ -18,13 +18,23 @@ export default function GameBoard({}: Props) {
 			/>
 			<Planet
 				name={'KOA'}
-				color={'lightgreen'}
+				color={'lightblue'}
 				gridLocation={{
 					column: '12 / 20',
 					row: '10 / 18',
 				}}
-				ring={false}
-				rings={1}
+				ring={true}
+				rings={4}
+			/>
+			<Planet
+				name={'IOA'}
+				color={'darkred'}
+				gridLocation={{
+					column: '16 / 23',
+					row: '3 / 9',
+				}}
+				ring={true}
+				rings={0}
 			/>
 		</main>
 	);
