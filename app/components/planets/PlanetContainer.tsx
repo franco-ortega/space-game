@@ -1,12 +1,9 @@
-import React, { ReactNode, useState } from 'react';
-import { GridLocation } from '@/app/types/types';
+import React, { ReactNode } from 'react';
+import { PlanetData } from '@/app/types/types';
 import Ring from '../rings/Ring';
 
 type Props = {
-	name: string;
-	color: string;
-	gridLocation: GridLocation;
-	rings: number;
+	planetData: PlanetData
 };
 
 function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
@@ -21,9 +18,12 @@ function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
 	return ringedPlanet;
 }
 
-export default function PlanetContainer({ name, color, gridLocation, rings }: Props) {
+export default function PlanetContainer({ planetData }: Props) {
+  const {name, color, rings, coordinates} = planetData;
+
+
 	const planetName = name.toUpperCase();
-	const { column, row } = gridLocation;
+	const { column, row } = coordinates;
 
 	// const planetBody = (
 	// 	<div className={styles.PlanetBody} style={{ backgroundColor: color }}>
