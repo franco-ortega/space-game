@@ -1,9 +1,10 @@
-import React, { ReactNode } from 'react';
+// import React, { ReactNode } from 'react';
 import { PlanetData } from '@/app/types/types';
+import Planet from './Planet';
 import Ring from '../rings/Ring';
 
 type Props = {
-	planetData: PlanetData
+	planetData: PlanetData;
 };
 
 function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
@@ -19,8 +20,7 @@ function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
 }
 
 export default function PlanetContainer({ planetData }: Props) {
-  const {name, color, rings, coordinates} = planetData;
-
+	const { name, color, rings, coordinates } = planetData;
 
 	const planetName = name.toUpperCase();
 	const { column, row } = coordinates;
@@ -31,11 +31,9 @@ export default function PlanetContainer({ planetData }: Props) {
 	// 	</div>
 	// );
 
-	// const planet = rings ? addRingsToPlanet(planetBody, rings) : planetBody;
+	const planetBody = <Planet name={planetName} color={color} rings={rings} />;
 
-	return (
-		// <div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
-		// 	{planet}
-		// </div>
-	);
+	const planet = rings ? addRingsToPlanet(planetBody, rings) : planetBody;
+
+	return <div style={{ gridColumn: column, gridRow: row }}>{planet}</div>;
 }
