@@ -1,59 +1,33 @@
+import React, { ReactNode } from 'react';
 import styles from './Planet.module.css';
-import Ring from './Ring';
+import Ring from '../rings/Ring';
 
 type Props = {
 	name: string;
 	color: string;
-	top: string;
-	right: string;
-	bottom: string;
-	left: string;
-	width: string;
+	column: string;
+	row: string;
+	ring: boolean;
 };
 
-export default function Planet({
-	name,
-	color,
-	top,
-	right,
-	bottom,
-	left,
-	width,
-}: Props) {
+export default function Planet({ name, color, column, row, ring }: Props) {
+	const planetName = name.toUpperCase();
+
+	const planetBody = (
+		<div className={styles.PlanetBody} style={{ backgroundColor: color }}>
+			<div className={styles.PlanetName}>{planetName}</div>
+		</div>
+	);
+
 	return (
-		<div className={styles.PlanetWrapper} style={{ top, right, bottom, left }}>
-			<Ring>
+		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
+			{ring ? (
 				<Ring>
-					<Ring>
-						<div
-							className={styles.Planet}
-							style={{ backgroundColor: color, width }}
-						>
-							<div>{name.toUpperCase()}</div>
-						</div>
-					</Ring>
+					<Ring>{planetBody}</Ring>
 				</Ring>
-			</Ring>
+			) : (
+				planetBody
+			)}
 		</div>
 	);
 }
-
-// export default function Planet({ name, color, column, row }: Props) {
-// 	return (
-// 		<div
-// 			className={styles.PlanetWrapper}
-// 			style={{ gridColumn: column, gridRow: row }
-//     }
-// 		>
-// 			<Ring>
-// 				<Ring>
-// 					<Ring>
-// 						<div className={styles.Planet} style={{ backgroundColor: color }}>
-// 							<div>{name.toUpperCase()}</div>
-// 						</div>
-// 					</Ring>
-// 				</Ring>
-// 			</Ring>
-// 		</div>
-// 	);
-// }
