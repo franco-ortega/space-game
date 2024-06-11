@@ -22,24 +22,24 @@ export default function Planet({ name, color, gridLocation, rings }: Props) {
 		</div>
 	);
 
-	let count = 0;
-	let ringedPlanet: React.JSX.Element = planetBody;
+	function addRingsToPlanet(ring: React.JSX.Element, amount: number) {
+		let count = 0;
+		let ringedPlanet = ring;
 
-	while (count < rings) {
-		ringedPlanet = <Ring>{ringedPlanet}</Ring>;
-		count++;
+		while (count < amount) {
+			ringedPlanet = <Ring>{ringedPlanet}</Ring>;
+			console.log(count);
+			count++;
+		}
+
+		return ringedPlanet;
 	}
 
-	console.log(count);
+	const planet = rings ? addRingsToPlanet(planetBody, rings) : planetBody;
 
 	return (
 		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
-			{rings
-				? // <Ring>
-				  // 	<Ring>{planetBody}</Ring>
-				  // </Ring>
-				  ringedPlanet
-				: planetBody}
+			{planet}
 		</div>
 	);
 }
