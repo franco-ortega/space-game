@@ -6,8 +6,6 @@ import styles from './Planet.module.css';
 type Props = {
 	name: string;
 	color: string;
-	// column: string;
-	// row: string;
 	gridLocation: GridLocation;
 	ring: boolean;
 };
