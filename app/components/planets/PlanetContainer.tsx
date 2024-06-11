@@ -22,16 +22,9 @@ function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
 export default function PlanetContainer({ planetData }: Props) {
 	const { name, color, rings, coordinates } = planetData;
 
-	const planetName = name.toUpperCase();
 	const { column, row } = coordinates;
 
-	// const planetBody = (
-	// 	<div className={styles.PlanetBody} style={{ backgroundColor: color }}>
-	// 		<div className={styles.PlanetName}>{planetName}</div>
-	// 	</div>
-	// );
-
-	const planetBody = <Planet name={planetName} color={color} rings={rings} />;
+	const planetBody = <Planet name={name} color={color} rings={rings} />;
 
 	const planet = rings ? addRingsToPlanet(planetBody, rings) : planetBody;
 
