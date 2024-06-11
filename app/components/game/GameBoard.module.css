@@ -13,3 +13,7 @@
 		grid-template-rows: repeat(20, 1fr);
 	}
 }
+
+.GameBoard > * {
+	background-color: hsl(51, 100%, 50%, 0.5);
+}

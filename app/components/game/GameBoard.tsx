@@ -1,4 +1,4 @@
-import Planet from '../planets/Planet';
+// import Planet from '../planets/Planet';
 import PlanetContainer from '../planets/PlanetContainer';
 import styles from './GameBoard.module.css';
 
@@ -23,8 +23,8 @@ export default function GameBoard({}: Props) {
 					name: 'KOA',
 					color: 'lightblue',
 					coordinates: {
-						column: '6 / 14',
-						row: '10 / 18',
+						column: '6 / 13',
+						row: '10 / 17',
 					},
 					rings: 4,
 				}}
