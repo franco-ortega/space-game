@@ -14,6 +14,7 @@ type Props = {
 
 export default function Planet({ name, color, gridLocation, ring }: Props) {
 	const planetName = name.toUpperCase();
+	const { column, row } = gridLocation;
 
 	const planetBody = (
 		<div className={styles.PlanetBody} style={{ backgroundColor: color }}>
@@ -22,10 +23,7 @@ export default function Planet({ name, color, gridLocation, ring }: Props) {
 	);
 
 	return (
-		<div
-			className={styles.Planet}
-			style={{ gridColumn: gridLocation.column, gridRow: gridLocation.row }}
-		>
+		<div className={styles.Planet} style={{ gridColumn: column, gridRow: row }}>
 			{ring ? (
 				<Ring>
 					<Ring>{planetBody}</Ring>
