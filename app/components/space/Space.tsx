@@ -11,7 +11,7 @@ export default function Space({ children }: Props) {
 		<div className={styles.Space}>
 			<div
 				style={{
-					backgroundImage: space,
+					background: space,
 				}}
 			>
 				{children}
