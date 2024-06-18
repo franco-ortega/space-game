@@ -23,8 +23,8 @@ export default function GameBoard({}: Props) {
 					name: 'IOA',
 					color: 'darkred',
 					coordinates: {
-						column: '15 / 25',
-						row: '7 / 12',
+						column: '17 / 25',
+						row: '6 / 10',
 					},
 					rings: 0,
 				}}
@@ -34,8 +34,8 @@ export default function GameBoard({}: Props) {
 					name: 'KOA',
 					color: 'lightblue',
 					coordinates: {
-						column: '6 / 16',
-						row: '13 / 18',
+						column: '3 / 16',
+						row: '13 / 19',
 					},
 					rings: 2,
 				}}
