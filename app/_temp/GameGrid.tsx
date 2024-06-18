@@ -1,7 +1,7 @@
-import GridPlanet from '../planets/GridPlanet';
-import LinkButton from '../links/LinkButton';
+import GridPlanet from './GridPlanet';
+import LinkButton from '../components/links/LinkButton';
 import styles from './GameGrid.module.css';
-import GridRingPlanet from '../planets/GridRingPlanet';
+import GridRingPlanet from './GridRingPlanet';
 
 type Props = {};
 
