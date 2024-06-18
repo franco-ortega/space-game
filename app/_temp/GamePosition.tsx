@@ -1,4 +1,4 @@
-import Planet from '../planets/Planet';
+// import Planet from '../planets/Planet';
 import styles from './GamePosition.module.css';
 
 type Props = {};

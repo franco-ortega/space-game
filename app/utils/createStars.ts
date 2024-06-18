@@ -1,6 +1,6 @@
 import createStar from "./createStar";
 
-export default function createSpace(stars: number = 100) {
+export default function createStars(stars: number = 100) {
   const starList = [];
 
   while (starList.length < stars) {

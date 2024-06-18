@@ -4,5 +4,9 @@
 	border-style: solid;
 	border-color: yellow;
 
-	padding: 1vw;
+	padding: 5px;
+	padding: 10%;
+
+	/* max-height: 100%; */
+	/* max-width: 100%; */
 }
