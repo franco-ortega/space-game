@@ -24,7 +24,8 @@
 	padding-inline: 2px 4px;
 
 	color: var(--white-one);
-	font-size: clamp(1rem, 2vw, 3rem);
+	font-size: clamp(1rem, 2vw, 100%);
+	/* font-size: 100%; */
 	font-style: italic;
 	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-20));
 

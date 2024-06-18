@@ -1,12 +1,6 @@
 .GameBoard {
 	background-color: hsl(350, 100%, 88%, 0.2);
 
-	/* height: 100%; */
-	/* width: 100%; */
-	outline: 10px dashed yellow;
-	height: 600px;
-	width: 300px;
-
 	display: grid;
 	grid-template-columns: repeat(30, 1fr);
 	grid-template-rows: repeat(30, 1fr);
@@ -19,4 +13,8 @@
 
 .GameBoard > * {
 	background-color: hsl(51, 100%, 50%, 0.5);
+}
+
+.GameBoard {
+	/* outline: 10px dashed yellow; */
 }
