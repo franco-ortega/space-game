@@ -12,21 +12,10 @@ export default function GameBoard({}: Props) {
 					name: 'JOA',
 					color: 'blue',
 					coordinates: {
-						column: '3 / 8',
+						column: '3 / 13',
 						row: '3 / 8',
 					},
-					rings: 2,
-				}}
-			/>
-			<PlanetContainer
-				planetData={{
-					name: 'KOA',
-					color: 'lightblue',
-					coordinates: {
-						column: '6 / 13',
-						row: '10 / 17',
-					},
-					rings: 4,
+					rings: 1,
 				}}
 			/>
 			<PlanetContainer
@@ -34,10 +23,21 @@ export default function GameBoard({}: Props) {
 					name: 'IOA',
 					color: 'darkred',
 					coordinates: {
-						column: '15 / 19',
-						row: '5 / 9',
+						column: '15 / 25',
+						row: '7 / 12',
 					},
 					rings: 0,
+				}}
+			/>
+			<PlanetContainer
+				planetData={{
+					name: 'KOA',
+					color: 'lightblue',
+					coordinates: {
+						column: '6 / 16',
+						row: '13 / 18',
+					},
+					rings: 2,
 				}}
 			/>
 			<PlanetContainer
@@ -45,8 +45,19 @@ export default function GameBoard({}: Props) {
 					name: 'ZOA',
 					color: 'orange',
 					coordinates: {
-						column: '13 / 16',
-						row: '17 / 20',
+						column: '18 / 28',
+						row: '19 / 24',
+					},
+					rings: 0,
+				}}
+			/>
+			<PlanetContainer
+				planetData={{
+					name: 'DOA',
+					color: 'pink',
+					coordinates: {
+						column: '5 / 15',
+						row: '25 / 30',
 					},
 					rings: 0,
 				}}

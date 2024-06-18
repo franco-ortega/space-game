@@ -5,6 +5,9 @@
 	grid-template-columns: repeat(30, 1fr);
 	grid-template-rows: repeat(30, 1fr);
 
+	height: 600px;
+	width: 300px;
+
 	@media (min-width: 500px) {
 		/* grid-template-columns: repeat(40, 1fr);
 		grid-template-rows: repeat(20, 1fr); */
@@ -16,5 +19,5 @@
 }
 
 .GameBoard {
-	/* outline: 10px dashed yellow; */
+	outline: 10px dashed yellow;
 }

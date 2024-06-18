@@ -3,15 +3,10 @@
 	border-radius: 100rem;
 
 	aspect-ratio: 1 / 1;
-	/* max-height: 100%; */
-	/* max-width: 100%; */
-
-	align-self: center;
-	justify-self: center;
+	min-width: fit-content;
+	/* padding: 2rem; */
 
 	display: flex;
-
-	/* outline: 2px dashed aqua; */
 }
 
 /* PLANET TITLE */
@@ -20,14 +15,18 @@
 
 	width: fit-content;
 	margin: auto;
-	padding-block: 2px;
-	padding-inline: 2px 4px;
+	/* padding-block: 2px; */
+	/* padding-inline: 2px 4px; */
 
 	color: var(--white-one);
-	font-size: clamp(1rem, 2vw, 100%);
-	/* font-size: 100%; */
+	font-size: clamp(0.75rem, 2vw, 100%);
 	font-style: italic;
 	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-20));
+}
 
-	/* outline: 2px dashed yellow; */
+.Planet {
+	/* outline: 2px dashed aqua; */
+	& > div {
+		outline: 2px dashed yellow;
+	}
 }
