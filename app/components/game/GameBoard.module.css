@@ -14,10 +14,10 @@
 	}
 }
 
-.GameBoard > * {
+/* .GameBoard > * {
 	background-color: hsl(51, 100%, 50%, 0.5);
-}
+} */
 
-.GameBoard {
+/* .GameBoard {
 	outline: 10px dashed yellow;
-}
+} */
