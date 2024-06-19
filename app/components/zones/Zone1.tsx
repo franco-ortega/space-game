@@ -4,25 +4,25 @@ import PlanetContainer from '../planets/PlanetContainer';
 
 type Props = {};
 
-export default function ZoneTwo({}: Props) {
+export default function Zone1({}: Props) {
 	return (
 		<ZoneTemplate
 			zoneData={{
 				zoneCoordinates: {
-					column: '16 / 30',
+					column: '2 / 15',
 					row: '5 / 11',
 				},
 			}}
 		>
 			<PlanetContainer
 				planetData={{
-					name: 'IOA',
-					color: 'darkred',
+					name: 'JOA',
+					color: 'blue',
 					coordinates: {
-						column: '17 / 27',
-						row: '6 / 12',
+						column: '',
+						row: '',
 					},
-					rings: 0,
+					rings: 1,
 				}}
 			/>
 		</ZoneTemplate>
