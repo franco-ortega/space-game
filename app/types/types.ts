@@ -9,3 +9,7 @@ export type PlanetData = {
 	rings: number;
 	coordinates: GridLocation
 };
+
+export type ZoneData = {
+  zoneCoordinates: GridLocation
+}
