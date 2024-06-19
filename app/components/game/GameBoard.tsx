@@ -1,6 +1,7 @@
 // import Planet from '../planets/Planet';
 import PlanetContainer from '../planets/PlanetContainer';
 import SpaceDock from '../spaceDock/SpaceDock';
+import ZoneTemplate from '../zones/ZoneTemplate';
 import styles from './GameBoard.module.css';
 
 type Props = {};
@@ -9,6 +10,46 @@ export default function GameBoard({}: Props) {
 	return (
 		<main className={styles.GameBoard}>
 			<SpaceDock />
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '5 / 11',
+					},
+				}}
+			>
+				Zone 1
+			</ZoneTemplate>
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '5 / 11',
+					},
+				}}
+			>
+				Zone 2
+			</ZoneTemplate>
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '11 / 17',
+					},
+				}}
+			>
+				Zone 3
+			</ZoneTemplate>
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '11 / 17',
+					},
+				}}
+			>
+				Zone 4
+			</ZoneTemplate>
 			<PlanetContainer
 				planetData={{
 					name: 'JOA',
