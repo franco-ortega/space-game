@@ -61,6 +61,68 @@ export default function GameBoard({}: Props) {
 					rings: 1,
 				}}
 			/>
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '17 / 23',
+					},
+				}}
+			>
+				Zone 5
+			</ZoneTemplate>
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '17 / 23',
+					},
+				}}
+			>
+				Zone 6
+			</ZoneTemplate>
+			<PlanetContainer
+				planetData={{
+					name: 'JOA',
+					color: 'blue',
+					coordinates: {
+						column: '3 / 15',
+						row: '3 / 8',
+					},
+					rings: 1,
+				}}
+			/>
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '23 / 29',
+					},
+				}}
+			>
+				Zone 7
+			</ZoneTemplate>
+			<ZoneTemplate
+				zoneData={{
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '23 / 29',
+					},
+				}}
+			>
+				Zone 8
+			</ZoneTemplate>
+			<PlanetContainer
+				planetData={{
+					name: 'JOA',
+					color: 'blue',
+					coordinates: {
+						column: '3 / 15',
+						row: '3 / 8',
+					},
+					rings: 1,
+				}}
+			/>
 			<PlanetContainer
 				planetData={{
 					name: 'IOA',
