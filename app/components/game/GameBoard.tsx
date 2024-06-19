@@ -1,5 +1,6 @@
 // import Planet from '../planets/Planet';
 import PlanetContainer from '../planets/PlanetContainer';
+import SpaceDock from '../spaceDock/SpaceDock';
 import styles from './GameBoard.module.css';
 
 type Props = {};
@@ -7,6 +8,7 @@ type Props = {};
 export default function GameBoard({}: Props) {
 	return (
 		<main className={styles.GameBoard}>
+			<SpaceDock />
 			<PlanetContainer
 				planetData={{
 					name: 'JOA',
