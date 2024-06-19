@@ -1,59 +1,37 @@
+import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
-import Ring from './Ring';
 
 type Props = {
-	name: string;
-	color: string;
-	top: string;
-	right: string;
-	bottom: string;
-	left: string;
-	width: string;
+	planetDetails: {
+		name: string;
+		color: string;
+		rings: number;
+	};
 };
 
-export default function Planet({
-	name,
-	color,
-	top,
-	right,
-	bottom,
-	left,
-	width,
-}: Props) {
-	return (
-		<div className={styles.PlanetWrapper} style={{ top, right, bottom, left }}>
-			<Ring>
-				<Ring>
-					<Ring>
-						<div
-							className={styles.Planet}
-							style={{ backgroundColor: color, width }}
-						>
-							<div>{name.toUpperCase()}</div>
-						</div>
-					</Ring>
-				</Ring>
-			</Ring>
+export default function Planet({ planetDetails }: Props) {
+	const { name, color, rings } = planetDetails;
+
+	const planet = (
+		<div className={styles.Planet} style={{ backgroundColor: color }}>
+			<div>{name.toUpperCase()}</div>
 		</div>
 	);
+
+	const completePlanet = rings ? addRingsToPlanet(planet, rings) : planet;
+
+	return <>{completePlanet}</>;
 }
 
-// export default function Planet({ name, color, column, row }: Props) {
-// 	return (
-// 		<div
-// 			className={styles.PlanetWrapper}
-// 			style={{ gridColumn: column, gridRow: row }
-//     }
-// 		>
-// 			<Ring>
-// 				<Ring>
-// 					<Ring>
-// 						<div className={styles.Planet} style={{ backgroundColor: color }}>
-// 							<div>{name.toUpperCase()}</div>
-// 						</div>
-// 					</Ring>
-// 				</Ring>
-// 			</Ring>
-// 		</div>
-// 	);
-// }
+/* HELPER FUNCTION */
+function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
+	let count = 0;
+	let ringedPlanet = planet;
+
+	while (count < amount) {
+		ringedPlanet = <Ring>{ringedPlanet}</Ring>;
+		count++;
+	}
+
+	return ringedPlanet;
+}

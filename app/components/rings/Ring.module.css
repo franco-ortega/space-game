@@ -1,0 +1,8 @@
+.Ring {
+	border-radius: 100rem;
+	border-width: 2px;
+	border-style: solid;
+	border-color: yellow;
+
+	padding: 5px;
+}

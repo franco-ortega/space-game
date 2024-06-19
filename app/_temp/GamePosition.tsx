@@ -1,4 +1,4 @@
-import Planet from '../planets/Planet';
+// import Planet from '../planets/Planet';
 import styles from './GamePosition.module.css';
 
 type Props = {};
@@ -6,7 +6,7 @@ type Props = {};
 export default function GamePosition({}: Props) {
 	return (
 		<section className={styles.GamePosition}>
-			<Planet
+			{/* <Planet
 				name={'Aob'}
 				color={'green'}
 				top={'10%'}
@@ -59,7 +59,7 @@ export default function GamePosition({}: Props) {
 				bottom={'0%'}
 				left={'75%'}
 				width={'12vw'}
-			/>
+			/> */}
 		</section>
 	);
 }
