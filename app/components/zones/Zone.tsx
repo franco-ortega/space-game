@@ -7,7 +7,6 @@ type Props = {
 };
 
 export default function Zone({ children, zoneData: { column, row } }: Props) {
-	console.log({ row });
 	return (
 		<div
 			className={styles.Zone}

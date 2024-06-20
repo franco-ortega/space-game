@@ -8,6 +8,7 @@ import styles from './GameBoard.module.css';
 import Zone3 from '../zones/Zone3';
 import Zone4 from '../zones/Zone4';
 import Planet1_Joa from '../planets/Planet1_Joa';
+import Zone from '../zones/Zone';
 
 type Props = {};
 
@@ -15,14 +16,14 @@ export default function GameBoard({}: Props) {
 	return (
 		<main className={styles.GameBoard}>
 			<SpaceDock />
-			<Zone1
+			<Zone
 				zoneData={{
 					column: '2 / 15',
 					row: '5 / 11',
 				}}
 			>
 				<Planet1_Joa />
-			</Zone1>
+			</Zone>
 			<Zone2 zoneData={{ column: '16 / 30', row: '5 / 11' }} />
 			<Zone3
 				zoneData={{
