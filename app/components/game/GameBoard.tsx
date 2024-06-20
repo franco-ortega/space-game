@@ -12,6 +12,22 @@ import Zone from '../zones/Zone';
 
 type Props = {};
 
+function PlanetJoa() {
+	return (
+		<PlanetContainer
+			planetData={{
+				name: 'JOA',
+				color: 'blue',
+				coordinates: {
+					column: '',
+					row: '',
+				},
+				rings: 1,
+			}}
+		/>
+	);
+}
+
 export default function GameBoard({}: Props) {
 	return (
 		<main className={styles.GameBoard}>
@@ -21,7 +37,7 @@ export default function GameBoard({}: Props) {
 					column: '2 / 15',
 					row: '5 / 11',
 				}}
-				Planet={Planet1_Joa}
+				Planet={PlanetJoa}
 			/>
 			<Zone2 zoneData={{ column: '16 / 30', row: '5 / 11' }} />
 			<Zone3
