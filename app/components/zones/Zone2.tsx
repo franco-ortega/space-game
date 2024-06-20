@@ -1,19 +1,15 @@
 import React from 'react';
 import ZoneTemplate from './ZoneTemplate';
 import PlanetContainer from '../planets/PlanetContainer';
+import { ZoneData } from '@/app/types/types';
 
-type Props = {};
+type Props = {
+	zoneData: ZoneData;
+};
 
-export default function Zone2({}: Props) {
+export default function Zone2({ zoneData }: Props) {
 	return (
-		<ZoneTemplate
-			zoneData={{
-				zoneCoordinates: {
-					column: '16 / 30',
-					row: '5 / 11',
-				},
-			}}
-		>
+		<ZoneTemplate zoneData={zoneData}>
 			<PlanetContainer
 				planetData={{
 					name: 'IOA',

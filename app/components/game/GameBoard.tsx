@@ -6,6 +6,7 @@ import ZoneTemplate from '../zones/ZoneTemplate';
 import Zone2 from '../zones/Zone2';
 import styles from './GameBoard.module.css';
 import Zone3 from '../zones/Zone3';
+import Zone4 from '../zones/Zone4';
 
 type Props = {};
 
@@ -13,9 +14,20 @@ export default function GameBoard({}: Props) {
 	return (
 		<main className={styles.GameBoard}>
 			<SpaceDock />
-			<Zone1 />
-			<Zone2 />
-			<Zone3 />
+			<Zone1
+				zoneData={{
+					column: '2 / 15',
+					row: '5 / 11',
+				}}
+			/>
+			<Zone2 zoneData={{ column: '16 / 30', row: '5 / 11' }} />
+			<Zone3
+				zoneData={{
+					column: '2 / 15',
+					row: '11 / 17',
+				}}
+			/>
+			{/* <Zone4 /> */}
 			{/* <ZoneTemplate
 				zoneData={{
 					zoneCoordinates: {
@@ -26,7 +38,7 @@ export default function GameBoard({}: Props) {
 			>
 				Zone 3
 			</ZoneTemplate> */}
-			<ZoneTemplate
+			{/* <ZoneTemplate
 				zoneData={{
 					zoneCoordinates: {
 						column: '16 / 30',
@@ -35,8 +47,9 @@ export default function GameBoard({}: Props) {
 				}}
 			>
 				Zone 4
-			</ZoneTemplate>
-			<ZoneTemplate
+			</ZoneTemplate> */}
+
+			{/* <ZoneTemplate
 				zoneData={{
 					zoneCoordinates: {
 						column: '2 / 15',
@@ -45,8 +58,8 @@ export default function GameBoard({}: Props) {
 				}}
 			>
 				Zone 5
-			</ZoneTemplate>
-			<ZoneTemplate
+			</ZoneTemplate> */}
+			{/* <ZoneTemplate
 				zoneData={{
 					zoneCoordinates: {
 						column: '16 / 30',
@@ -55,8 +68,8 @@ export default function GameBoard({}: Props) {
 				}}
 			>
 				Zone 6
-			</ZoneTemplate>
-			<ZoneTemplate
+			</ZoneTemplate> */}
+			{/* <ZoneTemplate
 				zoneData={{
 					zoneCoordinates: {
 						column: '2 / 15',
@@ -65,8 +78,8 @@ export default function GameBoard({}: Props) {
 				}}
 			>
 				Zone 7
-			</ZoneTemplate>
-			<ZoneTemplate
+			</ZoneTemplate> */}
+			{/* <ZoneTemplate
 				zoneData={{
 					zoneCoordinates: {
 						column: '16 / 30',
@@ -75,7 +88,7 @@ export default function GameBoard({}: Props) {
 				}}
 			>
 				Zone 8
-			</ZoneTemplate>
+			</ZoneTemplate> */}
 			{/* <PlanetContainer
 				planetData={{
 					name: 'JOA',

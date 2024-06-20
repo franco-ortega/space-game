@@ -6,15 +6,17 @@ type Props = {
 	zoneData: ZoneData;
 };
 
-export default function ZoneTemplate({ children, zoneData }: Props) {
-	const { zoneCoordinates } = zoneData;
-
+export default function ZoneTemplate({
+	children,
+	zoneData: { column, row },
+}: Props) {
+	console.log({ row });
 	return (
 		<div
 			className={styles.ZoneTemplate}
 			style={{
-				gridColumn: zoneCoordinates.column,
-				gridRow: zoneCoordinates.row,
+				gridColumn: column,
+				gridRow: row,
 			}}
 		>
 			{children}
