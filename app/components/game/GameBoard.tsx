@@ -21,9 +21,8 @@ export default function GameBoard({}: Props) {
 					column: '2 / 15',
 					row: '5 / 11',
 				}}
-			>
-				<Planet1_Joa />
-			</Zone>
+				Planet={Planet1_Joa}
+			/>
 			<Zone2 zoneData={{ column: '16 / 30', row: '5 / 11' }} />
 			<Zone3
 				zoneData={{

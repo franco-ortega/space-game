@@ -1,12 +1,13 @@
+import { ComponentType } from 'react';
 import { GridCoordinates } from '@/app/types/types';
 import styles from './Zone.module.css';
 
 type Props = {
-	children?: React.ReactNode;
+	Planet: ComponentType;
 	zoneData: GridCoordinates;
 };
 
-export default function Zone({ children, zoneData: { column, row } }: Props) {
+export default function Zone({ zoneData: { column, row }, Planet }: Props) {
 	return (
 		<div
 			className={styles.Zone}
@@ -15,7 +16,7 @@ export default function Zone({ children, zoneData: { column, row } }: Props) {
 				gridRow: row,
 			}}
 		>
-			{children}
+			<Planet />
 		</div>
 	);
 }
