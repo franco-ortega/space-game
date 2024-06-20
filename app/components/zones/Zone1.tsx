@@ -1,18 +1,20 @@
-import React from 'react';
-import ZoneTemplate from './ZoneTemplate';
-import PlanetContainer from '../planets/PlanetContainer';
 import { ZoneData } from '@/app/types/types';
-import Planet1_Joa from '../planets/Planet1_Joa';
+import ZoneTemplate from './ZoneTemplate';
 
 type Props = {
 	zoneData: ZoneData;
+	children: React.ReactNode;
 };
 
-export default function Zone1({ zoneData }: Props) {
+export default function Zone1({ zoneData, children }: Props) {
 	console.log({ zoneData });
-	return (
-		<ZoneTemplate zoneData={zoneData}>
-			{/* <PlanetContainer
+	return <ZoneTemplate zoneData={zoneData}>{children}</ZoneTemplate>;
+}
+
+// import PlanetContainer from '../planets/PlanetContainer';
+// import Planet1_Joa from '../planets/Planet1_Joa';
+{
+	/* <PlanetContainer
 				planetData={{
 					name: 'JOA',
 					color: 'blue',
@@ -22,8 +24,5 @@ export default function Zone1({ zoneData }: Props) {
 					},
 					rings: 1,
 				}}
-			/> */}
-			<Planet1_Joa />
-		</ZoneTemplate>
-	);
+			/> */
 }
