@@ -14,7 +14,7 @@ export default function Zone4({}: Props) {
 				},
 			}}
 		>
-			Zone 4
+			{/* Zone 4 */}
 		</ZoneTemplate>
 	);
 }

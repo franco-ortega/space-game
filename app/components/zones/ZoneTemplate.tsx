@@ -2,7 +2,7 @@ import { ZoneData } from '@/app/types/types';
 import styles from './ZoneTemplate.module.css';
 
 type Props = {
-	children: React.ReactNode;
+	children?: React.ReactNode;
 	zoneData: ZoneData;
 };
 
