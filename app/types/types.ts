@@ -12,7 +12,6 @@ export type PlanetData = {
   name: string;
   color: string;
 	rings: number;
-	coordinates: GridLocation
 };
 
 export type ZoneData = {

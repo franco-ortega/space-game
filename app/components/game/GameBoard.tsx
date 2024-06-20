@@ -141,7 +141,7 @@ export default function GameBoard({}: Props) {
 					rings: 2,
 				}}
 			/> */}
-			<PlanetContainer
+			{/* <PlanetContainer
 				planetData={{
 					name: 'ZOA',
 					color: 'orange',
@@ -151,8 +151,8 @@ export default function GameBoard({}: Props) {
 					},
 					rings: 0,
 				}}
-			/>
-			<PlanetContainer
+			/> */}
+			{/* <PlanetContainer
 				planetData={{
 					name: 'DOA',
 					color: 'pink',
@@ -162,7 +162,7 @@ export default function GameBoard({}: Props) {
 					},
 					rings: 0,
 				}}
-			/>
+			/> */}
 		</main>
 	);
 }
