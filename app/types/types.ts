@@ -3,6 +3,11 @@ export type GridLocation = {
   row: string;
 };
 
+export type GridCoordinates = {
+  column: string;
+  row: string;
+};
+
 export type PlanetData = {
   name: string;
   color: string;
