@@ -13,8 +13,6 @@ export default function Zone4({}: Props) {
 					row: '11 / 17',
 				},
 			}}
-		>
-			{/* Zone 4 */}
-		</ZoneTemplate>
+		></ZoneTemplate>
 	);
 }
