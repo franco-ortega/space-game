@@ -56,14 +56,14 @@ export default function GameBoard({}: Props) {
 					column: '16 / 30',
 					row: '17 / 23',
 				}}
-				Planet={EmptyZone}
+				Planet={PlanetZoa}
 			/>
 			<Zone
 				zoneData={{
 					column: '2 / 15',
 					row: '23 / 29',
 				}}
-				Planet={EmptyZone}
+				Planet={PlanetDoa}
 			/>
 			<Zone
 				zoneData={{
@@ -72,52 +72,6 @@ export default function GameBoard({}: Props) {
 				}}
 				Planet={EmptyZone}
 			/>
-
-			{/* <PlanetContainer
-				planetData={{
-					name: 'JOA',
-					color: 'blue',
-					coordinates: {
-						column: '3 / 15',
-						row: '3 / 8',
-					},
-					rings: 1,
-				}}
-			/> */}
-			{/* <PlanetContainer
-				planetData={{
-					name: 'IOA',
-					color: 'darkred',
-					coordinates: {
-						column: '17 / 27',
-						row: '6 / 12',
-					},
-					rings: 0,
-				}}
-			/> */}
-			{/* <PlanetContainer
-				planetData={{
-					name: 'KOA',
-					color: 'lightblue',
-					coordinates: {
-						column: '3 / 16',
-						row: '13 / 19',
-					},
-					rings: 2,
-				}}
-			/> */}
-
-			{/* <PlanetContainer
-				planetData={{
-					name: 'DOA',
-					color: 'pink',
-					coordinates: {
-						column: '5 / 15',
-						row: '25 / 30',
-					},
-					rings: 0,
-				}}
-			/> */}
 		</main>
 	);
 }
@@ -183,6 +137,30 @@ function PlanetKoa() {
 				name: 'KOA',
 				color: 'lightblue',
 				rings: 2,
+			}}
+		/>
+	);
+}
+
+function PlanetZoa() {
+	return (
+		<PlanetContainer
+			planetData={{
+				name: 'ZOA',
+				color: 'orange',
+				rings: 0,
+			}}
+		/>
+	);
+}
+
+function PlanetDoa() {
+	return (
+		<PlanetContainer
+			planetData={{
+				name: 'DOA',
+				color: 'pink',
+				rings: 0,
 			}}
 		/>
 	);
