@@ -7,14 +7,10 @@ type Props = {
 };
 
 export default function PlanetContainer({ planetData }: Props) {
-	const { coordinates, ...planetDetails } = planetData;
-	const { column, row } = coordinates;
+	const { ...planetDetails } = planetData;
 
 	return (
-		<div
-			className={styles.PlanetContainer}
-			style={{ gridColumn: column, gridRow: row }}
-		>
+		<div className={styles.PlanetContainer}>
 			<Planet planetDetails={planetDetails} />
 		</div>
 	);
