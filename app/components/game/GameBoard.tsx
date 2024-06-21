@@ -12,18 +12,6 @@ import Zone from '../zones/Zone';
 
 type Props = {};
 
-function PlanetJoa() {
-	return (
-		<PlanetContainer
-			planetData={{
-				name: 'JOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
-				color: 'blue',
-				rings: 1,
-			}}
-		/>
-	);
-}
-
 export default function GameBoard({}: Props) {
 	return (
 		<main className={styles.GameBoard}>
@@ -35,7 +23,14 @@ export default function GameBoard({}: Props) {
 				}}
 				Planet={PlanetJoa}
 			/>
-			<Zone2 zoneData={{ column: '16 / 30', row: '5 / 11' }} />
+			<Zone
+				zoneData={{
+					column: '16 / 30',
+					row: '5 / 11',
+				}}
+				Planet={PlanetIoa}
+			/>
+			{/* <Zone2 zoneData={{ column: '16 / 30', row: '5 / 11' }} /> */}
 			<Zone3
 				zoneData={{
 					column: '2 / 15',
@@ -191,4 +186,28 @@ export default function GameBoard({}: Props) {
 				}}
 				rings={0}
 			/> */
+}
+
+function PlanetJoa() {
+	return (
+		<PlanetContainer
+			planetData={{
+				name: 'JOA',
+				color: 'blue',
+				rings: 1,
+			}}
+		/>
+	);
+}
+
+function PlanetIoa() {
+	return (
+		<PlanetContainer
+			planetData={{
+				name: 'IOA',
+				color: 'darkred',
+				rings: 0,
+			}}
+		/>
+	);
 }
