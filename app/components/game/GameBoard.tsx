@@ -44,75 +44,35 @@ export default function GameBoard({}: Props) {
 				}}
 				Planet={EmptyZone}
 			/>
-			{/* <Zone2 zoneData={{ column: '16 / 30', row: '5 / 11' }} /> */}
-			{/* <Zone3
+			<Zone
 				zoneData={{
 					column: '2 / 15',
-					row: '11 / 17',
+					row: '17 / 23',
 				}}
-			/> */}
-			{/* <Zone4 /> */}
-			{/* <ZoneTemplate
+				Planet={EmptyZone}
+			/>
+			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '2 / 15',
-						row: '11 / 17',
-					},
+					column: '16 / 30',
+					row: '17 / 23',
 				}}
-			>
-				Zone 3
-			</ZoneTemplate> */}
-			{/* <ZoneTemplate
+				Planet={EmptyZone}
+			/>
+			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '16 / 30',
-						row: '11 / 17',
-					},
+					column: '2 / 15',
+					row: '23 / 29',
 				}}
-			>
-				Zone 4
-			</ZoneTemplate> */}
+				Planet={EmptyZone}
+			/>
+			<Zone
+				zoneData={{
+					column: '16 / 30',
+					row: '23 / 29',
+				}}
+				Planet={EmptyZone}
+			/>
 
-			{/* <ZoneTemplate
-				zoneData={{
-					zoneCoordinates: {
-						column: '2 / 15',
-						row: '17 / 23',
-					},
-				}}
-			>
-				Zone 5
-			</ZoneTemplate> */}
-			{/* <ZoneTemplate
-				zoneData={{
-					zoneCoordinates: {
-						column: '16 / 30',
-						row: '17 / 23',
-					},
-				}}
-			>
-				Zone 6
-			</ZoneTemplate> */}
-			{/* <ZoneTemplate
-				zoneData={{
-					zoneCoordinates: {
-						column: '2 / 15',
-						row: '23 / 29',
-					},
-				}}
-			>
-				Zone 7
-			</ZoneTemplate> */}
-			{/* <ZoneTemplate
-				zoneData={{
-					zoneCoordinates: {
-						column: '16 / 30',
-						row: '23 / 29',
-					},
-				}}
-			>
-				Zone 8
-			</ZoneTemplate> */}
 			{/* <PlanetContainer
 				planetData={{
 					name: 'JOA',
@@ -146,17 +106,7 @@ export default function GameBoard({}: Props) {
 					rings: 2,
 				}}
 			/> */}
-			{/* <PlanetContainer
-				planetData={{
-					name: 'ZOA',
-					color: 'orange',
-					coordinates: {
-						column: '18 / 28',
-						row: '19 / 24',
-					},
-					rings: 0,
-				}}
-			/> */}
+
 			{/* <PlanetContainer
 				planetData={{
 					name: 'DOA',
