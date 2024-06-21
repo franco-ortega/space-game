@@ -3,7 +3,7 @@ import { GridCoordinates } from '@/app/types/types';
 import styles from './Zone.module.css';
 
 type Props = {
-	Planet: ComponentType;
+	Planet?: ComponentType;
 	zoneData: GridCoordinates;
 };
 
