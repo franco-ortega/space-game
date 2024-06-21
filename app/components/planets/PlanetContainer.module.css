@@ -1,6 +1,9 @@
 .PlanetContainer {
-	/* padding: 0.5rem; */
+	padding: 0.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	background-color: hsl(350, 100%, 88%, 0.25);
+	height: 100%;
 }

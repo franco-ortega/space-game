@@ -16,12 +16,8 @@ function PlanetJoa() {
 	return (
 		<PlanetContainer
 			planetData={{
-				name: 'JOA',
+				name: 'JOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
 				color: 'blue',
-				coordinates: {
-					column: '',
-					row: '',
-				},
 				rings: 1,
 			}}
 		/>

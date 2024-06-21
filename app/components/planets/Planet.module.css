@@ -3,7 +3,7 @@
 	border-radius: 100rem;
 
 	padding: 1rem;
-	width: fit-content;
+	overflow: hidden;
 	aspect-ratio: 1 / 1;
 
 	display: flex;
@@ -11,13 +11,17 @@
 
 /* PLANET TITLE */
 .Planet > div {
-	width: fit-content;
 	margin: auto;
 
 	color: var(--white-one);
 	font-size: clamp(0.75rem, 5vw, 100%);
 	font-style: italic;
 	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-20));
+
+	word-break: break-all;
+
+	max-height: 100%;
+	overflow: hidden;
 }
 
 .Planet {
