@@ -1,5 +1,5 @@
 import { PlanetData } from '@/app/types/types';
-import Planet from './Planet';
+// import Planet from './Planet';
 import styles from './PlanetContainer.module.css';
 
 type Props = {
@@ -11,7 +11,7 @@ export default function PlanetContainer({ planetData }: Props) {
 
 	return (
 		<div className={styles.PlanetContainer}>
-			<Planet planetDetails={planetDetails} />
+			{/* <Planet planetDetails={planetDetails} /> */}
 		</div>
 	);
 }
