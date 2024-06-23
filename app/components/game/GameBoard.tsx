@@ -1,14 +1,11 @@
-import Orbit from '../orbit/Orbit';
-import Planet from '../planets/Planet';
-// import PlanetContainer from '../planets/PlanetContainer';
-import Ring from '../rings/Ring';
-import SpaceDock from '../spaceDock/SpaceDock';
 import Zone from '../zones/Zone';
+import SpaceDock from '../spaceDock/SpaceDock';
+import Orbit from '../orbit/Orbit';
+import Ring from '../rings/Ring';
+import Planet from '../planets/Planet';
 import styles from './GameBoard.module.css';
 
-type Props = {};
-
-export default function GameBoard({}: Props) {
+export default function GameBoard() {
 	return (
 		<main className={styles.GameBoard}>
 			<SpaceDock />
