@@ -79,30 +79,6 @@ export default function GameBoard({}: Props) {
 - optional number of RING child components 
 - PLANET child or grandchild component */
 
-// function PlanetTest() {
-// 	return (
-// 		<Orbit
-// 			planetPosition={{
-// 				alignItems: 'flex-start',
-// 				justifyContent: 'flex-start',
-// 			}}
-// 		>
-// 			<Ring>
-// 				<Ring>
-// 					<Planet
-// 						planetDetails={{
-// 							name: 'TEST',
-// 							color: 'green',
-// 							rings: 0,
-// 							width: '5rem',
-// 						}}
-// 					/>
-// 				</Ring>
-// 			</Ring>
-// 		</Orbit>
-// 	);
-// }
-
 function PlanetJoa() {
 	return (
 		<Orbit
@@ -126,18 +102,6 @@ function PlanetJoa() {
 	);
 }
 
-// function PlanetJoa() {
-// 	return (
-// 		<PlanetContainer
-// 			planetData={{
-// 				name: 'JOA',
-// 				color: 'blue',
-// 				rings: 1,
-// 			}}
-// 		/>
-// 	);
-// }
-
 function PlanetIoa() {
 	return (
 		<Orbit
@@ -157,18 +121,6 @@ function PlanetIoa() {
 		</Orbit>
 	);
 }
-
-// function PlanetIoa() {
-// 	return (
-// 		<PlanetContainer
-// 			planetData={{
-// 				name: 'IOA',
-// 				color: 'darkred',
-// 				rings: 0,
-// 			}}
-// 		/>
-// 	);
-// }
 
 function PlanetKoa() {
 	return (
@@ -195,18 +147,6 @@ function PlanetKoa() {
 	);
 }
 
-// function PlanetKoa() {
-// 	return (
-// 		<PlanetContainer
-// 			planetData={{
-// 				name: 'KOA',
-// 				color: 'lightblue',
-// 				rings: 2,
-// 			}}
-// 		/>
-// 	);
-// }
-
 function PlanetZoa() {
 	return (
 		<Orbit
@@ -226,18 +166,6 @@ function PlanetZoa() {
 		</Orbit>
 	);
 }
-
-// function PlanetZoa() {
-// 	return (
-// 		<PlanetContainer
-// 			planetData={{
-// 				name: 'ZOA',
-// 				color: 'orange',
-// 				rings: 0,
-// 			}}
-// 		/>
-// 	);
-// }
 
 function PlanetDoa() {
 	return (
@@ -259,6 +187,84 @@ function PlanetDoa() {
 	);
 }
 
+function EmptyZone() {
+	return <></>;
+}
+
+/* Test planet and previous architecture of existing planets */
+
+// function PlanetTest() {
+// 	return (
+// 		<Orbit
+// 			planetPosition={{
+// 				alignItems: 'flex-start',
+// 				justifyContent: 'flex-start',
+// 			}}
+// 		>
+// 			<Ring>
+// 				<Ring>
+// 					<Planet
+// 						planetDetails={{
+// 							name: 'TEST',
+// 							color: 'green',
+// 							rings: 0,
+// 							width: '5rem',
+// 						}}
+// 					/>
+// 				</Ring>
+// 			</Ring>
+// 		</Orbit>
+// 	);
+// }
+
+// function PlanetJoa() {
+// 	return (
+// 		<PlanetContainer
+// 			planetData={{
+// 				name: 'JOA',
+// 				color: 'blue',
+// 				rings: 1,
+// 			}}
+// 		/>
+// 	);
+// }
+
+// function PlanetIoa() {
+// 	return (
+// 		<PlanetContainer
+// 			planetData={{
+// 				name: 'IOA',
+// 				color: 'darkred',
+// 				rings: 0,
+// 			}}
+// 		/>
+// 	);
+// }
+
+// function PlanetKoa() {
+// 	return (
+// 		<PlanetContainer
+// 			planetData={{
+// 				name: 'KOA',
+// 				color: 'lightblue',
+// 				rings: 2,
+// 			}}
+// 		/>
+// 	);
+// }
+
+// function PlanetZoa() {
+// 	return (
+// 		<PlanetContainer
+// 			planetData={{
+// 				name: 'ZOA',
+// 				color: 'orange',
+// 				rings: 0,
+// 			}}
+// 		/>
+// 	);
+// }
+
 // function PlanetDoa() {
 // 	return (
 // 		<PlanetContainer
@@ -270,7 +276,3 @@ function PlanetDoa() {
 // 		/>
 // 	);
 // }
-
-function EmptyZone() {
-	return <></>;
-}
