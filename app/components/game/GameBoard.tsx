@@ -133,6 +133,11 @@ function PlanetDoa() {
 	);
 }
 
+/* a PLANET is comprised of:
+- ORBIT  parent component
+- optional number of RING child components 
+- PLANET child or grandchild component */
+
 function PlanetTest() {
 	return (
 		<Orbit>
