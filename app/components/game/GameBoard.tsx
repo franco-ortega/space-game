@@ -141,17 +141,17 @@ function PlanetDoa() {
 function PlanetTest() {
 	return (
 		<Orbit>
-			<Ring>
-				<Ring>
-					<Planet
-						planetDetails={{
-							name: 'TEST',
-							color: 'green',
-							rings: 0,
-						}}
-					/>
-				</Ring>
-			</Ring>
+			{/* <Ring>
+				<Ring> */}
+			<Planet
+				planetDetails={{
+					name: 'TEST',
+					color: 'green',
+					rings: 0,
+				}}
+			/>
+			{/* </Ring>
+			</Ring> */}
 		</Orbit>
 	);
 }
