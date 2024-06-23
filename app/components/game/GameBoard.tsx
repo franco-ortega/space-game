@@ -1,3 +1,4 @@
+import Orbit from '../orbit/Orbit';
 import Planet from '../planets/Planet';
 import PlanetContainer from '../planets/PlanetContainer';
 import Ring from '../rings/Ring';
@@ -134,17 +135,19 @@ function PlanetDoa() {
 
 function PlanetTest() {
 	return (
-		<Ring>
+		<Orbit>
 			<Ring>
-				<Planet
-					planetDetails={{
-						name: 'TEST',
-						color: 'green',
-						rings: 0,
-					}}
-				/>
+				<Ring>
+					<Planet
+						planetDetails={{
+							name: 'TEST',
+							color: 'green',
+							rings: 0,
+						}}
+					/>
+				</Ring>
 			</Ring>
-		</Ring>
+		</Orbit>
 	);
 }
 
