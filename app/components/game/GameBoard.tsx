@@ -108,7 +108,7 @@ function PlanetJoa() {
 		<Orbit
 			planetPosition={{
 				alignItems: 'center',
-				justifyContent: 'center',
+				justifyContent: 'flex-start',
 			}}
 		>
 			<Ring>
@@ -118,7 +118,7 @@ function PlanetJoa() {
 						color: 'blue',
 						// rings: 1,
 						rings: 0,
-						width: '5rem',
+						width: '4rem',
 					}}
 				/>
 			</Ring>
@@ -174,7 +174,7 @@ function PlanetKoa() {
 	return (
 		<Orbit
 			planetPosition={{
-				alignItems: 'flex-start',
+				alignItems: 'flex-end',
 				justifyContent: 'flex-end',
 			}}
 		>
@@ -220,7 +220,7 @@ function PlanetZoa() {
 					name: 'ZOA',
 					color: 'orange',
 					rings: 0,
-					width: '5rem',
+					width: '7rem',
 				}}
 			/>
 		</Orbit>
