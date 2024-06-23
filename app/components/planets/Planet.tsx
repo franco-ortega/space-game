@@ -1,17 +1,13 @@
+import { PlanetData } from '@/app/types/types';
 import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
 
 type Props = {
-	planetDetails: {
-		name: string;
-		color: string;
-		rings: number;
-		width: string;
-	};
+	planetData: PlanetData;
 };
 
-export default function Planet({ planetDetails }: Props) {
-	const { name, color, rings, width } = planetDetails;
+export default function Planet({ planetData }: Props) {
+	const { name, color, rings, width } = planetData;
 
 	const planet = (
 		<div className={styles.Planet} style={{ backgroundColor: color, width }}>

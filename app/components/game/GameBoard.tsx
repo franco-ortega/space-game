@@ -86,7 +86,7 @@ function PlanetJoa() {
 		>
 			<Ring>
 				<Planet
-					planetDetails={{
+					planetData={{
 						name: 'JOA',
 						color: 'blue',
 						// rings: 1,
@@ -108,7 +108,7 @@ function PlanetIoa() {
 			}}
 		>
 			<Planet
-				planetDetails={{
+				planetData={{
 					name: 'IOA',
 					color: 'darkred',
 					rings: 0,
@@ -130,7 +130,7 @@ function PlanetKoa() {
 			<Ring>
 				<Ring>
 					<Planet
-						planetDetails={{
+						planetData={{
 							name: 'KOA',
 							color: 'lightblue',
 							// rings: 2,
@@ -153,7 +153,7 @@ function PlanetZoa() {
 			}}
 		>
 			<Planet
-				planetDetails={{
+				planetData={{
 					name: 'ZOA',
 					color: 'orange',
 					rings: 0,
@@ -173,7 +173,7 @@ function PlanetDoa() {
 			}}
 		>
 			<Planet
-				planetDetails={{
+				planetData={{
 					name: 'DOA',
 					color: 'pink',
 					rings: 0,
@@ -201,7 +201,7 @@ function EmptyZone() {
 // 			<Ring>
 // 				<Ring>
 // 					<Planet
-// 						planetDetails={{
+// 						planetData={{
 // 							name: 'TEST',
 // 							color: 'green',
 // 							rings: 0,
