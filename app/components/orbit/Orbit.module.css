@@ -5,6 +5,7 @@
 	margin-inline: auto;
 
 	display: flex;
+	flex-direction: row;
 
-	/* background-color: hsl(0, 59%, 41%, 0.25); */
+	/* background-color: hsl(0, 59%, 41%, 0.5); */
 }
