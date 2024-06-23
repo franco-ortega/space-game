@@ -80,7 +80,12 @@ export default function GameBoard({}: Props) {
 
 function PlanetTest() {
 	return (
-		<Orbit>
+		<Orbit
+			planetPosition={{
+				alignItems: 'flex-start',
+				justifyContent: 'flex-start',
+			}}
+		>
 			<Ring>
 				<Ring>
 					<Planet
@@ -99,7 +104,12 @@ function PlanetTest() {
 
 function PlanetJoa() {
 	return (
-		<Orbit>
+		<Orbit
+			planetPosition={{
+				alignItems: 'center',
+				justifyContent: 'center',
+			}}
+		>
 			<Ring>
 				<Planet
 					planetDetails={{
@@ -129,7 +139,12 @@ function PlanetJoa() {
 
 function PlanetIoa() {
 	return (
-		<Orbit>
+		<Orbit
+			planetPosition={{
+				alignItems: 'flex-start',
+				justifyContent: 'flex-start',
+			}}
+		>
 			<Planet
 				planetDetails={{
 					name: 'IOA',
@@ -156,7 +171,12 @@ function PlanetIoa() {
 
 function PlanetKoa() {
 	return (
-		<Orbit>
+		<Orbit
+			planetPosition={{
+				alignItems: 'flex-start',
+				justifyContent: 'flex-end',
+			}}
+		>
 			<Ring>
 				<Ring>
 					<Planet
@@ -188,7 +208,12 @@ function PlanetKoa() {
 
 function PlanetZoa() {
 	return (
-		<Orbit>
+		<Orbit
+			planetPosition={{
+				alignItems: 'flex-end',
+				justifyContent: 'flex-start',
+			}}
+		>
 			<Planet
 				planetDetails={{
 					name: 'ZOA',
@@ -215,7 +240,12 @@ function PlanetZoa() {
 
 function PlanetDoa() {
 	return (
-		<Orbit>
+		<Orbit
+			planetPosition={{
+				alignItems: 'flex-start',
+				justifyContent: 'flex-end',
+			}}
+		>
 			<Planet
 				planetDetails={{
 					name: 'DOA',
