@@ -1,5 +1,14 @@
 .Orbit {
 	background-color: hsl(0, 59%, 41%, 0.25);
+
 	height: 100%;
 	width: 100%;
+
+	display: flex;
+	/* align-content: flex-end; */
+	/* align-items: center; */
+	/* justify-content: flex-end; */
+	/* flex-shrink: 0; */
+	/* justify-content: center; */
+	/* justify-content: space-evenly; */
 }
