@@ -66,7 +66,8 @@ export default function GameBoard({}: Props) {
 					column: '16 / 30',
 					row: '23 / 29',
 				}}
-				Planet={PlanetTest}
+				Planet={EmptyZone}
+				// Planet={PlanetTest}
 			/>
 		</main>
 	);
@@ -78,29 +79,29 @@ export default function GameBoard({}: Props) {
 - optional number of RING child components 
 - PLANET child or grandchild component */
 
-function PlanetTest() {
-	return (
-		<Orbit
-			planetPosition={{
-				alignItems: 'flex-start',
-				justifyContent: 'flex-start',
-			}}
-		>
-			<Ring>
-				<Ring>
-					<Planet
-						planetDetails={{
-							name: 'TEST',
-							color: 'green',
-							rings: 0,
-							width: '5rem',
-						}}
-					/>
-				</Ring>
-			</Ring>
-		</Orbit>
-	);
-}
+// function PlanetTest() {
+// 	return (
+// 		<Orbit
+// 			planetPosition={{
+// 				alignItems: 'flex-start',
+// 				justifyContent: 'flex-start',
+// 			}}
+// 		>
+// 			<Ring>
+// 				<Ring>
+// 					<Planet
+// 						planetDetails={{
+// 							name: 'TEST',
+// 							color: 'green',
+// 							rings: 0,
+// 							width: '5rem',
+// 						}}
+// 					/>
+// 				</Ring>
+// 			</Ring>
+// 		</Orbit>
+// 	);
+// }
 
 function PlanetJoa() {
 	return (
