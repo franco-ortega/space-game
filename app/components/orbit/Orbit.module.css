@@ -2,6 +2,8 @@
 	height: 100%;
 	aspect-ratio: 1 / 1;
 
+	margin-inline: auto;
+
 	display: flex;
 
 	/* background-color: hsl(0, 59%, 41%, 0.25); */
