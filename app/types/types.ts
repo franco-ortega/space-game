@@ -10,7 +10,5 @@ export type PlanetData = {
 };
 
 export type ZoneData = {
-  // column: string;
-  // row: string;
   zoneCoordinates: GridCoordinates;
 }

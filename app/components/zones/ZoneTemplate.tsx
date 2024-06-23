@@ -8,16 +8,15 @@ type Props = {
 
 export default function ZoneTemplate({
 	children,
-	zoneData: { column, row },
-}: Props) {
-	console.log({ row });
+}: // zoneData: { column, row },
+Props) {
 	return (
 		<div
 			className={styles.ZoneTemplate}
-			style={{
-				gridColumn: column,
-				gridRow: row,
-			}}
+			// style={{
+			// 	gridColumn: column,
+			// 	gridRow: row,
+			// }}
 		>
 			{children}
 		</div>
