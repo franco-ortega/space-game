@@ -11,7 +11,6 @@ export type GridCoordinates = {
 export type PlanetData = {
   name: string;
   color: string;
-	rings: number;
   width: string;
 };
 

@@ -89,8 +89,6 @@ function PlanetJoa() {
 					planetData={{
 						name: 'JOA',
 						color: 'blue',
-						// rings: 1,
-						rings: 0,
 						width: '4rem',
 					}}
 				/>
@@ -111,7 +109,6 @@ function PlanetIoa() {
 				planetData={{
 					name: 'IOA',
 					color: 'darkred',
-					rings: 0,
 					width: '5rem',
 				}}
 			/>
@@ -133,8 +130,6 @@ function PlanetKoa() {
 						planetData={{
 							name: 'KOA',
 							color: 'lightblue',
-							// rings: 2,
-							rings: 0,
 							width: '5rem',
 						}}
 					/>
@@ -156,7 +151,6 @@ function PlanetZoa() {
 				planetData={{
 					name: 'ZOA',
 					color: 'orange',
-					rings: 0,
 					width: '7rem',
 				}}
 			/>
@@ -176,7 +170,6 @@ function PlanetDoa() {
 				planetData={{
 					name: 'DOA',
 					color: 'pink',
-					rings: 0,
 					width: '5rem',
 				}}
 			/>
@@ -203,8 +196,7 @@ function EmptyZone() {
 // 					<Planet
 // 						planetData={{
 // 							name: 'TEST',
-// 							color: 'green',
-// 							rings: 0,
+// 							color: 'green'
 // 							width: '5rem',
 // 						}}
 // 					/>
@@ -219,8 +211,7 @@ function EmptyZone() {
 // 		<PlanetContainer
 // 			planetData={{
 // 				name: 'JOA',
-// 				color: 'blue',
-// 				rings: 1,
+// 				color: 'blue'
 // 			}}
 // 		/>
 // 	);
@@ -231,8 +222,7 @@ function EmptyZone() {
 // 		<PlanetContainer
 // 			planetData={{
 // 				name: 'IOA',
-// 				color: 'darkred',
-// 				rings: 0,
+// 				color: 'darkred'
 // 			}}
 // 		/>
 // 	);
@@ -243,8 +233,7 @@ function EmptyZone() {
 // 		<PlanetContainer
 // 			planetData={{
 // 				name: 'KOA',
-// 				color: 'lightblue',
-// 				rings: 2,
+// 				color: 'lightblue'
 // 			}}
 // 		/>
 // 	);
@@ -255,8 +244,7 @@ function EmptyZone() {
 // 		<PlanetContainer
 // 			planetData={{
 // 				name: 'ZOA',
-// 				color: 'orange',
-// 				rings: 0,
+// 				color: 'orange'
 // 			}}
 // 		/>
 // 	);
@@ -267,8 +255,7 @@ function EmptyZone() {
 // 		<PlanetContainer
 // 			planetData={{
 // 				name: 'DOA',
-// 				color: 'pink',
-// 				rings: 0,
+// 				color: 'pink'
 // 			}}
 // 		/>
 // 	);
