@@ -148,6 +148,7 @@ function PlanetTest() {
 							name: 'TEST',
 							color: 'green',
 							rings: 0,
+							width: '5rem',
 						}}
 					/>
 				</Ring>
