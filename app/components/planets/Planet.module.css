@@ -8,14 +8,8 @@
 
 	max-height: 100%;
 	max-width: 100%;
-	/* width: fit-content; */
-	/* width: inherit; */
-
-	/* flex-shrink: 0; */
 
 	display: flex;
-
-	/* width: 5rem; */
 }
 
 /* PLANET TITLE */
