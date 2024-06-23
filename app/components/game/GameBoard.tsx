@@ -77,6 +77,7 @@ function PlanetJoa() {
 	return (
 		<PlanetContainer
 			planetData={{
+				width: '10rem',
 				name: 'JOA',
 				color: 'blue',
 				rings: 1,
@@ -89,6 +90,7 @@ function PlanetIoa() {
 	return (
 		<PlanetContainer
 			planetData={{
+				width: '10rem',
 				name: 'IOA',
 				color: 'darkred',
 				rings: 0,
@@ -101,6 +103,7 @@ function PlanetKoa() {
 	return (
 		<PlanetContainer
 			planetData={{
+				width: '10rem',
 				name: 'KOA',
 				color: 'lightblue',
 				rings: 2,
@@ -113,6 +116,7 @@ function PlanetZoa() {
 	return (
 		<PlanetContainer
 			planetData={{
+				width: '10rem',
 				name: 'ZOA',
 				color: 'orange',
 				rings: 0,
@@ -125,6 +129,7 @@ function PlanetDoa() {
 	return (
 		<PlanetContainer
 			planetData={{
+				width: '10rem',
 				name: 'DOA',
 				color: 'pink',
 				rings: 0,
