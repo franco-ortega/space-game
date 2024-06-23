@@ -1,4 +1,6 @@
+import Planet from '../planets/Planet';
 import PlanetContainer from '../planets/PlanetContainer';
+import Ring from '../rings/Ring';
 import SpaceDock from '../spaceDock/SpaceDock';
 import Zone from '../zones/Zone';
 import styles from './GameBoard.module.css';
@@ -63,7 +65,7 @@ export default function GameBoard({}: Props) {
 					column: '16 / 30',
 					row: '23 / 29',
 				}}
-				Planet={EmptyZone}
+				Planet={PlanetTest}
 			/>
 		</main>
 	);
@@ -127,6 +129,22 @@ function PlanetDoa() {
 				rings: 0,
 			}}
 		/>
+	);
+}
+
+function PlanetTest() {
+	return (
+		<Ring>
+			<Ring>
+				<Planet
+					planetDetails={{
+						name: 'TEST',
+						color: 'green',
+						rings: 0,
+					}}
+				/>
+			</Ring>
+		</Ring>
 	);
 }
 
