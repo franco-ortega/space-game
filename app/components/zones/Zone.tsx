@@ -1,13 +1,18 @@
 import { ComponentType } from 'react';
-import { GridCoordinates } from '@/app/types/types';
+import { GridCoordinates, ZoneData } from '@/app/types/types';
 import styles from './Zone.module.css';
 
 type Props = {
 	Planet: ComponentType;
-	zoneData: GridCoordinates;
+	zoneData: ZoneData;
 };
 
-export default function Zone({ zoneData: { column, row }, Planet }: Props) {
+export default function Zone({
+	zoneData: {
+		zoneCoordinates: { column, row },
+	},
+	Planet,
+}: Props) {
 	return (
 		<div
 			className={styles.Zone}
