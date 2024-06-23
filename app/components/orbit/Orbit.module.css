@@ -1,12 +1,8 @@
 .Orbit {
-	background-color: hsl(0, 59%, 41%, 0.25);
-
-	aspect-ratio: 1 / 1;
-
 	height: 100%;
+	aspect-ratio: 1 / 1;
 
 	display: flex;
 
-	align-items: flex-end;
-	justify-content: flex-end;
+	/* background-color: hsl(0, 59%, 41%, 0.25); */
 }
