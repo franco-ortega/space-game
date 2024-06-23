@@ -6,15 +6,14 @@ type Props = {
 		name: string;
 		color: string;
 		rings: number;
-		width: string;
 	};
 };
 
 export default function Planet({ planetDetails }: Props) {
-	const { name, color, rings, width } = planetDetails;
+	const { name, color, rings } = planetDetails;
 
 	const planet = (
-		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
+		<div className={styles.Planet} style={{ backgroundColor: color }}>
 			<div>{name.toUpperCase()}</div>
 		</div>
 	);
