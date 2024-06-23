@@ -11,57 +11,73 @@ export default function GameBoard() {
 			<SpaceDock />
 			<Zone
 				zoneData={{
-					column: '2 / 15',
-					row: '5 / 11',
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '5 / 11',
+					},
 				}}
 				Planet={PlanetJoa}
 			/>
 			<Zone
 				zoneData={{
-					column: '16 / 30',
-					row: '5 / 11',
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '5 / 11',
+					},
 				}}
 				Planet={PlanetIoa}
 			/>
 			<Zone
 				zoneData={{
-					column: '2 / 15',
-					row: '11 / 17',
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '11 / 17',
+					},
 				}}
 				Planet={PlanetKoa}
 			/>
 			<Zone
 				zoneData={{
-					column: '16 / 30',
-					row: '11 / 17',
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '11 / 17',
+					},
 				}}
 				Planet={EmptyZone}
 			/>
 			<Zone
 				zoneData={{
-					column: '2 / 15',
-					row: '17 / 23',
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '17 / 23',
+					},
 				}}
 				Planet={EmptyZone}
 			/>
 			<Zone
 				zoneData={{
-					column: '16 / 30',
-					row: '17 / 23',
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '17 / 23',
+					},
 				}}
 				Planet={PlanetZoa}
 			/>
 			<Zone
 				zoneData={{
-					column: '2 / 15',
-					row: '23 / 29',
+					zoneCoordinates: {
+						column: '2 / 15',
+						row: '23 / 29',
+					},
 				}}
 				Planet={PlanetDoa}
 			/>
 			<Zone
 				zoneData={{
-					column: '16 / 30',
-					row: '23 / 29',
+					zoneCoordinates: {
+						column: '16 / 30',
+						row: '23 / 29',
+					},
 				}}
 				Planet={EmptyZone}
 				// Planet={PlanetTest}
