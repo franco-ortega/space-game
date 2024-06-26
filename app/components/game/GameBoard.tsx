@@ -6,6 +6,7 @@ import Orbit from '../orbit/Orbit';
 import Ring from '../rings/Ring';
 import Planet from '../planets/Planet';
 import styles from './GameBoard.module.css';
+import { PlanetData } from '@/app/types/types';
 
 export default function GameBoard() {
 	return (
@@ -73,45 +74,61 @@ a PLANET is comprised of:
 
 const { doa, ioa, joa, koa, zoa } = planets;
 
-function PlanetJoa() {
-	return (
-		<Orbit planetPosition={joa.orbit}>
-			<Planet planetData={joa} />
-		</Orbit>
-	);
+function createPlanet(planetData: PlanetData) {
+	return function CreatePlanet() {
+		return (
+			<Orbit planetPosition={planetData.orbit}>
+				<Planet planetData={planetData} />
+			</Orbit>
+		);
+	};
 }
 
-function PlanetIoa() {
-	return (
-		<Orbit planetPosition={ioa.orbit}>
-			<Planet planetData={ioa} />
-		</Orbit>
-	);
-}
+const PlanetJoa = createPlanet(joa);
+const PlanetIoa = createPlanet(ioa);
+const PlanetDoa = createPlanet(doa);
+const PlanetKoa = createPlanet(koa);
+const PlanetZoa = createPlanet(zoa);
 
-function PlanetKoa() {
-	return (
-		<Orbit planetPosition={koa.orbit}>
-			<Planet planetData={koa} />
-		</Orbit>
-	);
-}
+// function PlanetJoa() {
+// 	return (
+// 		<Orbit planetPosition={joa.orbit}>
+// 			<Planet planetData={joa} />
+// 		</Orbit>
+// 	);
+// }
 
-function PlanetZoa() {
-	return (
-		<Orbit planetPosition={zoa.orbit}>
-			<Planet planetData={zoa} />
-		</Orbit>
-	);
-}
+// function PlanetIoa() {
+// 	return (
+// 		<Orbit planetPosition={ioa.orbit}>
+// 			<Planet planetData={ioa} />
+// 		</Orbit>
+// 	);
+// }
 
-function PlanetDoa() {
-	return (
-		<Orbit planetPosition={doa.orbit}>
-			<Planet planetData={doa} />
-		</Orbit>
-	);
-}
+// function PlanetKoa() {
+// 	return (
+// 		<Orbit planetPosition={koa.orbit}>
+// 			<Planet planetData={koa} />
+// 		</Orbit>
+// 	);
+// }
+
+// function PlanetZoa() {
+// 	return (
+// 		<Orbit planetPosition={zoa.orbit}>
+// 			<Planet planetData={zoa} />
+// 		</Orbit>
+// 	);
+// }
+
+// function PlanetDoa() {
+// 	return (
+// 		<Orbit planetPosition={doa.orbit}>
+// 			<Planet planetData={doa} />
+// 		</Orbit>
+// 	);
+// }
 
 function EmptyZone() {
 	return <></>;
