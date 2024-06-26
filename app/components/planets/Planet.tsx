@@ -5,7 +5,11 @@ type Props = {
 	planetData: PlanetData;
 };
 
-export default function Planet({ planetData: { name, color, width } }: Props) {
+export default function Planet({
+	planetData: { name, color, width, rings },
+}: Props) {
+	console.log(rings);
+
 	return (
 		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
 			<div>{name.toUpperCase()}</div>

@@ -7,6 +7,11 @@ export type PlanetData = {
   name: string;
   color: string;
   width: string;
+  rings: {
+    ringColor: string,
+    ringPadding: string,
+    ringWidth: string,
+  }[]
 };
 
 export type ZoneData = {
