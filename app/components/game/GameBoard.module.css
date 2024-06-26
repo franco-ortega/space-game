@@ -2,17 +2,9 @@
 	background-color: hsl(350, 100%, 88%, 0.2);
 
 	display: grid;
-	grid-template-columns: repeat(30, 1fr);
-	grid-template-rows: repeat(30, 1fr);
+	grid-template-columns: repeat(31, 1fr);
+	grid-template-rows: repeat(31, 1fr);
 
 	height: 600px;
 	width: 300px;
-
-	/*
-  300px / 2 = 150 px
-
-  150 x4 = 600px
-  
-  
-  */
 }
