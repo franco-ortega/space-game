@@ -5,9 +5,7 @@ type Props = {
 	planetData: PlanetData;
 };
 
-export default function Planet({ planetData }: Props) {
-	const { name, color, width } = planetData;
-
+export default function Planet({ planetData: { name, color, width } }: Props) {
 	return (
 		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
 			<div>{name.toUpperCase()}</div>
