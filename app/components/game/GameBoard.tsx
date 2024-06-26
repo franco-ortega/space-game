@@ -97,12 +97,7 @@ const { doa, ioa, joa, koa, zoa } = planets;
 
 function PlanetJoa() {
 	return (
-		<Orbit
-			planetPosition={{
-				alignItems: 'center',
-				justifyContent: 'flex-start',
-			}}
-		>
+		<Orbit planetPosition={joa.orbit}>
 			<Ring ringColor='hsl(200 50% 70%)' ringPadding='5px' ringWidth='2px'>
 				<Planet planetData={joa} />
 			</Ring>
@@ -112,12 +107,7 @@ function PlanetJoa() {
 
 function PlanetIoa() {
 	return (
-		<Orbit
-			planetPosition={{
-				alignItems: 'flex-start',
-				justifyContent: 'flex-start',
-			}}
-		>
+		<Orbit planetPosition={ioa.orbit}>
 			<Planet planetData={ioa} />
 		</Orbit>
 	);
@@ -125,12 +115,7 @@ function PlanetIoa() {
 
 function PlanetKoa() {
 	return (
-		<Orbit
-			planetPosition={{
-				alignItems: 'flex-end',
-				justifyContent: 'flex-end',
-			}}
-		>
+		<Orbit planetPosition={koa.orbit}>
 			<Ring
 				ringColor='hsl(40, 100%, 50%, 0.75)'
 				ringPadding='4px'
@@ -150,12 +135,7 @@ function PlanetKoa() {
 
 function PlanetZoa() {
 	return (
-		<Orbit
-			planetPosition={{
-				alignItems: 'flex-end',
-				justifyContent: 'flex-start',
-			}}
-		>
+		<Orbit planetPosition={zoa.orbit}>
 			<Planet planetData={zoa} />
 		</Orbit>
 	);
@@ -163,12 +143,7 @@ function PlanetZoa() {
 
 function PlanetDoa() {
 	return (
-		<Orbit
-			planetPosition={{
-				alignItems: 'flex-start',
-				justifyContent: 'flex-end',
-			}}
-		>
+		<Orbit planetPosition={doa.orbit}>
 			<Planet planetData={doa} />
 		</Orbit>
 	);

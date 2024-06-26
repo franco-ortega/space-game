@@ -2,26 +2,46 @@
 	"doa": {
 		"name": "DOA",
 		"color": "pink",
-		"width": "5rem"
+		"width": "5rem",
+		"orbit": {
+			"alignItems": "flex-start",
+			"justifyContent": "flex-end"
+		}
 	},
 	"ioa": {
 		"name": "IOA",
 		"color": "darkgreen",
-		"width": "5rem"
+		"width": "5rem",
+		"orbit": {
+			"alignItems": "flex-start",
+			"justifyContent": "flex-start"
+		}
 	},
 	"joa": {
 		"name": "JOA",
 		"color": "hsl(200 50% 40%)",
-		"width": "4rem"
+		"width": "4rem",
+		"orbit": {
+			"alignItems": "center",
+			"justifyContent": "flex-start"
+		}
 	},
 	"koa": {
 		"name": "KOA",
 		"color": "violet",
-		"width": "5rem"
+		"width": "5rem",
+		"orbit": {
+			"alignItems": "flex-end",
+			"justifyContent": "flex-end"
+		}
 	},
 	"zoa": {
 		"name": "ZOA",
 		"color": "orange",
-		"width": "7rem"
+		"width": "7rem",
+		"orbit": {
+			"alignItems": "flex-end",
+			"justifyContent": "flex-start"
+		}
 	}
 }
