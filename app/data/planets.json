@@ -13,8 +13,8 @@
 		"color": "darkgreen",
 		"width": "5rem",
 		"orbit": {
-			"alignItems": "flex-start",
-			"justifyContent": "flex-start"
+			"alignItems": "flex-end",
+			"justifyContent": "center"
 		}
 	},
 	"joa": {
