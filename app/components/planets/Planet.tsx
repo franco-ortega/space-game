@@ -27,20 +27,19 @@ export default function Planet({
 /* HELPER FUNCTION */
 function addRingsToPlanet(planet: React.JSX.Element, rings: RingData) {
 	let count = 0;
-	let ringedPlanet = planet;
 
 	while (count < rings.length) {
-		ringedPlanet = (
+		planet = (
 			<Ring
 				ringColor={rings[count].ringColor}
 				ringPadding={rings[count].ringPadding}
 				ringWidth={rings[count].ringWidth}
 			>
-				{ringedPlanet}
+				{planet}
 			</Ring>
 		);
 		count++;
 	}
 
-	return ringedPlanet;
+	return planet;
 }
