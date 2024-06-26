@@ -40,7 +40,7 @@
 		"color": "orange",
 		"width": "7rem",
 		"orbit": {
-			"alignItems": "flex-end",
+			"alignItems": "center",
 			"justifyContent": "flex-start"
 		}
 	}
