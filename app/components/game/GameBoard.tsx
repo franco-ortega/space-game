@@ -63,11 +63,13 @@ export default function GameBoard() {
 	);
 }
 
-/* PLANETS */
-/* a PLANET is comprised of:
-- ORBIT  parent component
-- optional number of RING child components 
-- PLANET child or grandchild component */
+/*
+PLANETS
+
+a PLANET is comprised of:
+- ORBIT parent component
+- PLANET child component 
+*/
 
 const { doa, ioa, joa, koa, zoa } = planets;
 
