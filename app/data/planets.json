@@ -1,0 +1,27 @@
+{
+	"doa": {
+		"name": "DOA",
+		"color": "pink",
+		"width": "5rem"
+	},
+	"ioa": {
+		"name": "IOA",
+		"color": "darkgreen",
+		"width": "5rem"
+	},
+	"joa": {
+		"name": "JOA",
+		"color": "hsl(200 50% 40%)",
+		"width": "4rem"
+	},
+	"koa": {
+		"name": "KOA",
+		"color": "violet",
+		"width": "5rem"
+	},
+	"zoa": {
+		"name": "ZOA",
+		"color": "orange",
+		"width": "7rem"
+	}
+}

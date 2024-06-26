@@ -1,3 +1,4 @@
+import planets from '../../data/planets.json';
 import Zone from '../zones/Zone';
 import SpaceDock from '../spaceDock/SpaceDock';
 import Orbit from '../orbit/Orbit';
@@ -92,6 +93,8 @@ export default function GameBoard() {
 - optional number of RING child components 
 - PLANET child or grandchild component */
 
+const { doa, ioa, joa, koa, zoa } = planets;
+
 function PlanetJoa() {
 	return (
 		<Orbit
@@ -101,13 +104,7 @@ function PlanetJoa() {
 			}}
 		>
 			<Ring ringColor='hsl(200 50% 70%)' ringPadding='5px' ringWidth='2px'>
-				<Planet
-					planetData={{
-						name: 'JOA',
-						color: 'hsl(200 50% 40%)',
-						width: '4rem',
-					}}
-				/>
+				<Planet planetData={joa} />
 			</Ring>
 		</Orbit>
 	);
@@ -121,13 +118,7 @@ function PlanetIoa() {
 				justifyContent: 'flex-start',
 			}}
 		>
-			<Planet
-				planetData={{
-					name: 'IOA',
-					color: 'darkgreen',
-					width: '5rem',
-				}}
-			/>
+			<Planet planetData={ioa} />
 		</Orbit>
 	);
 }
@@ -150,13 +141,7 @@ function PlanetKoa() {
 					ringPadding='5px'
 					ringWidth='4px'
 				>
-					<Planet
-						planetData={{
-							name: 'KOA',
-							color: 'violet',
-							width: '5rem',
-						}}
-					/>
+					<Planet planetData={koa} />
 				</Ring>
 			</Ring>
 		</Orbit>
@@ -171,13 +156,7 @@ function PlanetZoa() {
 				justifyContent: 'flex-start',
 			}}
 		>
-			<Planet
-				planetData={{
-					name: 'ZOA',
-					color: 'orange',
-					width: '7rem',
-				}}
-			/>
+			<Planet planetData={zoa} />
 		</Orbit>
 	);
 }
@@ -190,13 +169,7 @@ function PlanetDoa() {
 				justifyContent: 'flex-end',
 			}}
 		>
-			<Planet
-				planetData={{
-					name: 'DOA',
-					color: 'pink',
-					width: '5rem',
-				}}
-			/>
+			<Planet planetData={doa} />
 		</Orbit>
 	);
 }
