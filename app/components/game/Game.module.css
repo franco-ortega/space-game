@@ -22,10 +22,3 @@
 	font-weight: 600;
 	font-style: italic;
 }
-
-.Game {
-	/* outline: 12px dotted lightblue; */
-	& > * {
-		/* outline: 2px dotted lightblue; */
-	}
-}

@@ -2,9 +2,7 @@ import GameBoard from './GameBoard';
 import LinkButton from '../links/LinkButton';
 import styles from './Game.module.css';
 
-type Props = {};
-
-function Game({}: Props) {
+function Game() {
 	return (
 		<div className={styles.Game}>
 			<header>
