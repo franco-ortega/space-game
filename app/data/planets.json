@@ -6,7 +6,8 @@
 		"orbit": {
 			"alignItems": "flex-start",
 			"justifyContent": "flex-end"
-		}
+		},
+		"rings": []
 	},
 	"ioa": {
 		"name": "IOA",
@@ -15,7 +16,8 @@
 		"orbit": {
 			"alignItems": "flex-end",
 			"justifyContent": "center"
-		}
+		},
+		"rings": []
 	},
 	"joa": {
 		"name": "JOA",
@@ -24,7 +26,14 @@
 		"orbit": {
 			"alignItems": "center",
 			"justifyContent": "flex-start"
-		}
+		},
+		"rings": [
+			{
+				"ringColor": "hsl(200 50% 70%)",
+				"ringPadding": "5px",
+				"ringWidth": "2px"
+			}
+		]
 	},
 	"koa": {
 		"name": "KOA",
@@ -33,7 +42,19 @@
 		"orbit": {
 			"alignItems": "flex-end",
 			"justifyContent": "flex-end"
-		}
+		},
+		"rings": [
+			{
+				"ringColor": "hsl(40, 100%, 50%, 0.75)",
+				"ringPadding": "4px",
+				"ringWidth": "2px"
+			},
+			{
+				"ringColor": "hsl(0, 100%, 40%, 0.85)",
+				"ringPadding": "5px",
+				"ringWidth": "4px"
+			}
+		]
 	},
 	"zoa": {
 		"name": "ZOA",
@@ -42,6 +63,7 @@
 		"orbit": {
 			"alignItems": "center",
 			"justifyContent": "flex-start"
-		}
+		},
+		"rings": []
 	}
 }

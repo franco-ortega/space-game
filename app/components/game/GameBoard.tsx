@@ -98,7 +98,11 @@ const { doa, ioa, joa, koa, zoa } = planets;
 function PlanetJoa() {
 	return (
 		<Orbit planetPosition={joa.orbit}>
-			<Ring ringColor='hsl(200 50% 70%)' ringPadding='5px' ringWidth='2px'>
+			<Ring
+				ringColor={joa.rings[0].ringColor}
+				ringPadding={joa.rings[0].ringPadding}
+				ringWidth={joa.rings[0].ringWidth}
+			>
 				<Planet planetData={joa} />
 			</Ring>
 		</Orbit>
@@ -117,14 +121,14 @@ function PlanetKoa() {
 	return (
 		<Orbit planetPosition={koa.orbit}>
 			<Ring
-				ringColor='hsl(40, 100%, 50%, 0.75)'
-				ringPadding='4px'
-				ringWidth='2px'
+				ringColor={koa.rings[0].ringColor}
+				ringPadding={koa.rings[0].ringPadding}
+				ringWidth={koa.rings[0].ringWidth}
 			>
 				<Ring
-					ringColor='hsl(0, 100%, 40%, 0.85)'
-					ringPadding='5px'
-					ringWidth='4px'
+					ringColor={koa.rings[1].ringColor}
+					ringPadding={koa.rings[1].ringPadding}
+					ringWidth={koa.rings[1].ringWidth}
 				>
 					<Planet planetData={koa} />
 				</Ring>
