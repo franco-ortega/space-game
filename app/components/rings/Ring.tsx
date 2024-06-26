@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function Ring({
-	ringColor = 'yellow',
+	ringColor = 'hsl(0, 0%, 100%)',
 	ringPadding = '5px',
 	ringWidth = '2px',
 	children,
