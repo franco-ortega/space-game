@@ -1,4 +1,5 @@
 import planets from '../../data/planets.json';
+import zones from '../../data/zones.json';
 import Zone from '../zones/Zone';
 import SpaceDock from '../spaceDock/SpaceDock';
 import Orbit from '../orbit/Orbit';
@@ -12,76 +13,51 @@ export default function GameBoard() {
 			<SpaceDock />
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '2 / 15',
-						row: '5 / 11',
-					},
+					zoneCoordinates: zones.zone1,
 				}}
 				Planet={PlanetJoa}
 			/>
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '16 / 30',
-						row: '5 / 11',
-					},
+					zoneCoordinates: zones.zone2,
 				}}
 				Planet={PlanetIoa}
 			/>
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '2 / 15',
-						row: '11 / 17',
-					},
+					zoneCoordinates: zones.zone3,
 				}}
 				Planet={PlanetKoa}
 			/>
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '16 / 30',
-						row: '11 / 17',
-					},
+					zoneCoordinates: zones.zone4,
 				}}
 				Planet={EmptyZone}
 			/>
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '2 / 15',
-						row: '17 / 23',
-					},
+					zoneCoordinates: zones.zone5,
 				}}
 				Planet={EmptyZone}
 			/>
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '16 / 30',
-						row: '17 / 23',
-					},
+					zoneCoordinates: zones.zone6,
 				}}
 				Planet={PlanetZoa}
 			/>
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '2 / 15',
-						row: '23 / 29',
-					},
+					zoneCoordinates: zones.zone7,
 				}}
 				Planet={PlanetDoa}
 			/>
 			<Zone
 				zoneData={{
-					zoneCoordinates: {
-						column: '16 / 30',
-						row: '23 / 29',
-					},
+					zoneCoordinates: zones.zone8,
 				}}
 				Planet={EmptyZone}
-				// Planet={PlanetTest}
 			/>
 		</main>
 	);
