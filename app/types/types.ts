@@ -3,15 +3,17 @@ export type GridCoordinates = {
   row: string;
 };
 
+export type RingData = {
+  ringColor: string,
+  ringPadding: string,
+  ringWidth: string,
+}[]
+
 export type PlanetData = {
   name: string;
   color: string;
   width: string;
-  rings: {
-    ringColor: string,
-    ringPadding: string,
-    ringWidth: string,
-  }[];
+  rings: RingData;
 };
 
 export type ZoneData = {

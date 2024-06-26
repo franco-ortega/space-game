@@ -1,5 +1,6 @@
-import { PlanetData } from '@/app/types/types';
+import { PlanetData, RingData } from '@/app/types/types';
 import styles from './Planet.module.css';
+import Ring from '../rings/Ring';
 
 type Props = {
 	planetData: PlanetData;
@@ -17,18 +18,30 @@ export default function Planet({
 		</div>
 	);
 
-	return <>{basePlanet}</>;
+	const completePlanet = rings.length
+		? addRingsToPlanet(basePlanet, rings)
+		: basePlanet;
+
+	return <>{completePlanet}</>;
 }
 
 /* HELPER FUNCTION */
-// function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
-// 	let count = 0;
-// 	let ringedPlanet = planet;
+function addRingsToPlanet(planet: React.JSX.Element, rings: RingData) {
+	let count = 0;
+	let ringedPlanet = planet;
 
-// 	while (count < amount) {
-// 		ringedPlanet = <Ring>{ringedPlanet}</Ring>;
-// 		count++;
-// 	}
+	while (count < rings.length) {
+		ringedPlanet = (
+			<Ring
+				ringColor={rings[count].ringColor}
+				ringPadding={rings[count].ringPadding}
+				ringWidth={rings[count].ringWidth}
+			>
+				{ringedPlanet}
+			</Ring>
+		);
+		count++;
+	}
 
-// 	return ringedPlanet;
-// }
+	return ringedPlanet;
+}
