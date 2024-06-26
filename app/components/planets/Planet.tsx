@@ -13,7 +13,7 @@ export default function Planet({
 
 	const basePlanet = (
 		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
-			<div>{planetName}</div>
+			<span>{planetName}</span>
 		</div>
 	);
 
