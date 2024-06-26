@@ -1,6 +1,6 @@
 import { PlanetData, RingData } from '@/app/types/types';
-import styles from './Planet.module.css';
 import Ring from '../rings/Ring';
+import styles from './Planet.module.css';
 
 type Props = {
 	planetData: PlanetData;
