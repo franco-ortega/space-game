@@ -124,7 +124,7 @@ function PlanetIoa() {
 			<Planet
 				planetData={{
 					name: 'IOA',
-					color: 'darkred',
+					color: 'darkgreen',
 					width: '5rem',
 				}}
 			/>
@@ -153,7 +153,7 @@ function PlanetKoa() {
 					<Planet
 						planetData={{
 							name: 'KOA',
-							color: 'lightblue',
+							color: 'violet',
 							width: '5rem',
 						}}
 					/>
