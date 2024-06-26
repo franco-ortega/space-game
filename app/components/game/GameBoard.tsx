@@ -100,11 +100,11 @@ function PlanetJoa() {
 				justifyContent: 'flex-start',
 			}}
 		>
-			<Ring>
+			<Ring ringColor='hsl(200 50% 70%)' ringPadding='5px' ringWidth='2px'>
 				<Planet
 					planetData={{
 						name: 'JOA',
-						color: 'blue',
+						color: 'hsl(200 50% 40%)',
 						width: '4rem',
 					}}
 				/>
@@ -140,8 +140,16 @@ function PlanetKoa() {
 				justifyContent: 'flex-end',
 			}}
 		>
-			<Ring>
-				<Ring>
+			<Ring
+				ringColor='hsl(40, 100%, 50%, 0.75)'
+				ringPadding='4px'
+				ringWidth='2px'
+			>
+				<Ring
+					ringColor='hsl(0, 100%, 40%, 0.85)'
+					ringPadding='5px'
+					ringWidth='4px'
+				>
 					<Planet
 						planetData={{
 							name: 'KOA',
