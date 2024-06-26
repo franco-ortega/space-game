@@ -2,16 +2,16 @@ import { ReactNode } from 'react';
 import styles from './Ring.module.css';
 
 type Props = {
-	ringWidth: string;
 	ringColor: string;
+	ringWidth: string;
 	ringPadding: string;
 	children: ReactNode;
 };
 
 export default function Ring({
 	ringColor = 'hsl(0, 0%, 100%)',
-	ringPadding = '5px',
 	ringWidth = '2px',
+	ringPadding = '5px',
 	children,
 }: Props) {
 	return (
