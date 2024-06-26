@@ -11,7 +11,7 @@ export type PlanetData = {
     ringColor: string,
     ringPadding: string,
     ringWidth: string,
-  }[]
+  }[];
 };
 
 export type ZoneData = {

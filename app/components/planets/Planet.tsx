@@ -10,11 +10,13 @@ export default function Planet({
 }: Props) {
 	console.log(rings);
 
-	return (
+	const basePlanet = (
 		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
 			<div>{name.toUpperCase()}</div>
 		</div>
 	);
+
+	return <>{basePlanet}</>;
 }
 
 /* HELPER FUNCTION */
