@@ -9,7 +9,6 @@ type Props = {
 export default function Planet({
 	planetData: { name, color, width, rings },
 }: Props) {
-	console.log(rings);
 	const planetName = name.toUpperCase();
 
 	const basePlanet = (
