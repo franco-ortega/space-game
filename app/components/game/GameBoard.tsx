@@ -33,12 +33,12 @@ export default function GameBoard() {
 
 	return (
 		<main className={styles.GameBoard}>
-			<Spaceship
+			{/* <Spaceship
 				ship={testShip}
 				shipData={{
 					shipCoordinates: shipLocation,
 				}}
-			/>
+			/> */}
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone0,
