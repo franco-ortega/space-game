@@ -27,7 +27,7 @@
 	font-style: italic;
 	text-shadow: 0 0 10px hsl(var(--hue-0), var(--sat-0), var(--light-20));
 
-	word-break: break-all;
+	/* word-break: break-all; */
 
 	max-height: 100%;
 	overflow: hidden;
