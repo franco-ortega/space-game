@@ -15,11 +15,11 @@ export default function GameBoard() {
 
 	const { doa, ioa, joa, koa, zoa } = planets;
 
-	const PlanetJoa = createPlanet(joa);
-	const PlanetIoa = createPlanet(ioa);
-	const PlanetDoa = createPlanet(doa);
-	const PlanetKoa = createPlanet(koa);
-	const PlanetZoa = createPlanet(zoa);
+	const PlanetJoa = createPlanet(joa, setShipLocation);
+	const PlanetIoa = createPlanet(ioa, setShipLocation);
+	const PlanetDoa = createPlanet(doa, setShipLocation);
+	const PlanetKoa = createPlanet(koa, setShipLocation);
+	const PlanetZoa = createPlanet(zoa, setShipLocation);
 
 	function EmptyZone() {
 		return <></>;
@@ -37,6 +37,7 @@ export default function GameBoard() {
 				zoneData={{
 					zoneCoordinates: zones.zone0,
 				}}
+				setShipLocation={setShipLocation}
 				Planet={SpaceDock}
 			/>
 			<Zone

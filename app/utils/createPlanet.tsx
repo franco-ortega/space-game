@@ -1,6 +1,7 @@
-import { PlanetData } from '../types/types';
+import { PlanetData, ZoneData } from '../types/types';
 import Orbit from '../components/orbit/Orbit';
 import Planet from '../components/planets/Planet';
+import { Dispatch, SetStateAction } from 'react';
 
 /*
 a PLANET is comprised of:
@@ -8,11 +9,14 @@ a PLANET is comprised of:
 - PLANET child component 
 */
 
-export default function createPlanet(planetData: PlanetData) {
+export default function createPlanet(
+	planetData: PlanetData,
+	setShipLocation: Dispatch<SetStateAction<{ column: string; row: string }>>
+) {
 	return function CreatePlanet() {
 		return (
 			<Orbit planetPosition={planetData.orbit}>
-				<Planet planetData={planetData} />
+				<Planet planetData={planetData} setShipLocation={setShipLocation} />
 			</Orbit>
 		);
 	};

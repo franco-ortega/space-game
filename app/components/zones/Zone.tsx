@@ -1,10 +1,11 @@
-import { ComponentType } from 'react';
+import { ComponentType, Dispatch, SetStateAction } from 'react';
 import { GridCoordinates, ZoneData } from '@/app/types/types';
 import styles from './Zone.module.css';
 
 type Props = {
 	Planet: ComponentType;
 	zoneData: ZoneData;
+	setShipLocation: Dispatch<SetStateAction<{ column: string; row: string }>>;
 };
 
 export default function Zone({
@@ -12,6 +13,7 @@ export default function Zone({
 		zoneCoordinates: { column, row },
 	},
 	Planet,
+	setShipLocation,
 }: Props) {
 	return (
 		<div
@@ -21,7 +23,7 @@ export default function Zone({
 				gridRow: row,
 			}}
 		>
-			<Planet />
+			<Planet setShipLocation={setShipLocation} />
 		</div>
 	);
 }
