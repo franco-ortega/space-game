@@ -20,7 +20,13 @@ export default function GameBoard() {
 
 	return (
 		<main className={styles.GameBoard}>
-			<SpaceDock />
+			{/* <SpaceDock /> */}
+			<Zone
+				zoneData={{
+					zoneCoordinates: zones.zone0,
+				}}
+				Planet={SpaceDock}
+			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone1,
