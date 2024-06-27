@@ -1,3 +1,5 @@
+'use client';
+
 import testShip from '/public/spaceships/rocket_1.png';
 import planets from '../../data/planets.json';
 import zones from '../../data/zones.json';
@@ -6,8 +8,11 @@ import Zone from '../zones/Zone';
 import SpaceDock from '../spaceDock/SpaceDock';
 import styles from './GameBoard.module.css';
 import Spaceship from '../spaceship/Spaceship';
+import { useState } from 'react';
 
 export default function GameBoard() {
+	const [shipLocation, setShipLocation] = useState(zones.zone0);
+
 	const { doa, ioa, joa, koa, zoa } = planets;
 
 	const PlanetJoa = createPlanet(joa);
@@ -25,13 +30,7 @@ export default function GameBoard() {
 			<Spaceship
 				ship={testShip}
 				shipData={{
-					shipCoordinates: zones.zone0,
-				}}
-			/>
-			<Spaceship
-				ship={testShip}
-				shipData={{
-					shipCoordinates: zones.zone1,
+					shipCoordinates: shipLocation,
 				}}
 			/>
 			<Zone
