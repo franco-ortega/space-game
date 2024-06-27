@@ -6,11 +6,13 @@ import { Dispatch, SetStateAction } from 'react';
 type Props = {
 	planetData: PlanetData;
 	setShipLocation: Dispatch<SetStateAction<{ column: string; row: string }>>;
+	zoneData: { column: string; row: string };
 };
 
 export default function Planet({
 	planetData: { name, color, width, rings },
 	setShipLocation,
+	zoneData,
 }: Props) {
 	const planetName = name.toUpperCase();
 
@@ -18,7 +20,7 @@ export default function Planet({
 		console.log(`${planetName} clicked`);
 		setShipLocation((prev) => {
 			console.log(prev);
-			return prev;
+			return zoneData;
 		});
 	}
 

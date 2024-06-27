@@ -15,11 +15,11 @@ export default function GameBoard() {
 
 	const { doa, ioa, joa, koa, zoa } = planets;
 
-	const PlanetJoa = createPlanet(joa, setShipLocation);
-	const PlanetIoa = createPlanet(ioa, setShipLocation);
-	const PlanetDoa = createPlanet(doa, setShipLocation);
-	const PlanetKoa = createPlanet(koa, setShipLocation);
-	const PlanetZoa = createPlanet(zoa, setShipLocation);
+	const PlanetJoa = createPlanet(joa, setShipLocation, zones.zone1);
+	const PlanetIoa = createPlanet(ioa, setShipLocation, zones.zone2);
+	const PlanetDoa = createPlanet(doa, setShipLocation, zones.zone7);
+	const PlanetKoa = createPlanet(koa, setShipLocation, zones.zone3);
+	const PlanetZoa = createPlanet(zoa, setShipLocation, zones.zone6);
 
 	function EmptyZone() {
 		return <></>;
@@ -37,56 +37,64 @@ export default function GameBoard() {
 				zoneData={{
 					zoneCoordinates: zones.zone0,
 				}}
-				setShipLocation={setShipLocation}
 				Planet={SpaceDock}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone1,
 				}}
 				Planet={PlanetJoa}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone2,
 				}}
 				Planet={PlanetIoa}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone3,
 				}}
 				Planet={PlanetKoa}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone4,
 				}}
 				Planet={EmptyZone}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone5,
 				}}
 				Planet={EmptyZone}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone6,
 				}}
 				Planet={PlanetZoa}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone7,
 				}}
 				Planet={PlanetDoa}
+				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone8,
 				}}
 				Planet={EmptyZone}
+				setShipLocation={setShipLocation}
 			/>
 		</main>
 	);
