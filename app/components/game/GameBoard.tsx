@@ -1,9 +1,11 @@
+import testShip from '/public/spaceships/rocket_2.png';
 import planets from '../../data/planets.json';
 import zones from '../../data/zones.json';
 import createPlanet from '@/app/utils/createPlanet';
 import Zone from '../zones/Zone';
 import SpaceDock from '../spaceDock/SpaceDock';
 import styles from './GameBoard.module.css';
+import Spaceship from '../spaceship/Spaceship';
 
 export default function GameBoard() {
 	const { doa, ioa, joa, koa, zoa } = planets;
@@ -20,7 +22,12 @@ export default function GameBoard() {
 
 	return (
 		<main className={styles.GameBoard}>
-			{/* <SpaceDock /> */}
+			<Spaceship
+				ship={testShip}
+				shipData={{
+					shipCoordinates: zones.zone0,
+				}}
+			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone0,
