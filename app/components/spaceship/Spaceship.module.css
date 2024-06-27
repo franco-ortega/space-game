@@ -1,0 +1,6 @@
+.Spaceship {
+	border-color: hsl(60, 100%, 50%);
+	border-radius: 100rem;
+	border-style: solid;
+	border-width: 2px;
+}
