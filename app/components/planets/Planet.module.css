@@ -1,6 +1,7 @@
 /* PLANET */
 .Planet {
 	border-radius: 100rem;
+	border-style: none;
 
 	padding: 1rem;
 	overflow: hidden;

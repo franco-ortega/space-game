@@ -1,0 +1,15 @@
+.Spaceship {
+	width: 45px;
+	height: 45px;
+
+	margin-block: auto;
+	margin-inline: auto;
+}
+
+.Spaceship img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	rotate: 180deg;
+}
