@@ -64,12 +64,6 @@
 			"alignItems": "center",
 			"justifyContent": "flex-start"
 		},
-		"rings": [
-			{
-				"ringColor": "hsl(0, 100%, 40%, 0.85)",
-				"ringPadding": "5px",
-				"ringWidth": "4px"
-			}
-		]
+		"rings": []
 	}
 }
