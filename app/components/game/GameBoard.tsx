@@ -1,6 +1,6 @@
 'use client';
 
-import testShip from '/public/spaceships/rocket_1.png';
+import testShip from '/public/spaceships/rocket_2.png';
 import planets from '../../data/planets.json';
 import zones from '../../data/zones.json';
 import createPlanet from '@/app/utils/createPlanet';
