@@ -11,10 +11,18 @@ export default function Planet({
 }: Props) {
 	const planetName = name.toUpperCase();
 
+	function onPlanetClick() {
+		console.log(`${planetName} clicked`);
+	}
+
 	const basePlanet = (
-		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
+		<button
+			className={styles.Planet}
+			style={{ backgroundColor: color, width }}
+			onClick={onPlanetClick}
+		>
 			<span>{planetName}</span>
-		</div>
+		</button>
 	);
 
 	const completePlanet = rings.length
