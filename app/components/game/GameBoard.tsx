@@ -21,6 +21,12 @@ export default function GameBoard() {
 	const PlanetKoa = createPlanet(koa, setShipLocation, zones.zone3);
 	const PlanetZoa = createPlanet(zoa, setShipLocation, zones.zone6);
 
+	const SpaceDockReady = function SpaceDockCreator() {
+		return (
+			<SpaceDock setShipLocation={setShipLocation} zoneData={zones.zone0} />
+		);
+	};
+
 	function EmptyZone() {
 		return <></>;
 	}
@@ -37,7 +43,7 @@ export default function GameBoard() {
 				zoneData={{
 					zoneCoordinates: zones.zone0,
 				}}
-				Planet={SpaceDock}
+				Planet={SpaceDockReady}
 				setShipLocation={setShipLocation}
 			/>
 			<Zone
