@@ -1,7 +1,7 @@
+import { Dispatch, SetStateAction } from 'react';
 import { PlanetData, RingData, ZoneData } from '@/app/types/types';
 import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
-import { Dispatch, SetStateAction } from 'react';
 
 type Props = {
 	planetData: PlanetData;

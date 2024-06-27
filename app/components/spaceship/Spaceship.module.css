@@ -1,23 +1,13 @@
 .Spaceship {
-	/* border-color: hsl(60, 100%, 50%); */
-	border-radius: 100rem;
-	/* border-style: solid; */
-	/* border-width: 2px; */
+	width: 45px;
+	height: 45px;
 
-	/* background-color: hsl(0, 0%, 100%); */
-
-	position: relative;
-
-	width: 50px;
-	height: 50px;
-
-	margin: auto;
-
-	transition: all 500ms ease-in;
+	margin-block: auto;
+	margin-inline: auto;
 }
 
 .Spaceship img {
-	display: inline-block;
+	display: block;
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
