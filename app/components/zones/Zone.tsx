@@ -23,7 +23,7 @@ export default function Zone({
 				gridRow: row,
 			}}
 		>
-			<Planet setShipLocation={setShipLocation} />
+			<Planet />
 		</div>
 	);
 }
