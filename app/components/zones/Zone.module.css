@@ -1,3 +1,4 @@
 .Zone {
+	overflow: hidden;
 	/* outline: dashed lightblue 1px; */
 }

@@ -17,7 +17,8 @@
 }
 
 /* PLANET TITLE */
-.Planet > div {
+.Planet > span {
+	display: block;
 	margin: auto;
 
 	color: var(--white-one);

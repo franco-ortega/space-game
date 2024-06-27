@@ -1,29 +1,45 @@
-import { PlanetData } from '@/app/types/types';
+import { PlanetData, RingData } from '@/app/types/types';
+import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
 
 type Props = {
 	planetData: PlanetData;
 };
 
-export default function Planet({ planetData }: Props) {
-	const { name, color, width } = planetData;
+export default function Planet({
+	planetData: { name, color, width, rings },
+}: Props) {
+	const planetName = name.toUpperCase();
 
-	return (
+	const basePlanet = (
 		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
-			<div>{name.toUpperCase()}</div>
+			<span>{planetName}</span>
 		</div>
 	);
+
+	const completePlanet = rings.length
+		? addRingsToPlanet(basePlanet, rings)
+		: basePlanet;
+
+	return <>{completePlanet}</>;
 }
 
 /* HELPER FUNCTION */
-// function addRingsToPlanet(planet: React.JSX.Element, amount: number) {
-// 	let count = 0;
-// 	let ringedPlanet = planet;
+function addRingsToPlanet(planet: React.JSX.Element, rings: RingData) {
+	let count = 0;
 
-// 	while (count < amount) {
-// 		ringedPlanet = <Ring>{ringedPlanet}</Ring>;
-// 		count++;
-// 	}
+	while (count < rings.length) {
+		planet = (
+			<Ring
+				ringColor={rings[count].ringColor}
+				ringPadding={rings[count].ringPadding}
+				ringWidth={rings[count].ringWidth}
+			>
+				{planet}
+			</Ring>
+		);
+		count++;
+	}
 
-// 	return ringedPlanet;
-// }
+	return planet;
+}
