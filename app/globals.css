@@ -104,7 +104,7 @@ body {
 
 button {
 	font-size: inherit;
-	line-height: 1.5;
+	border-style: none;
 }
 
 a {
