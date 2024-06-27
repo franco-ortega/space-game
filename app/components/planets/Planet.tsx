@@ -1,20 +1,37 @@
-import { PlanetData, RingData } from '@/app/types/types';
+import { Dispatch, SetStateAction } from 'react';
+import { PlanetData, RingData, ZoneData } from '@/app/types/types';
 import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
 
 type Props = {
 	planetData: PlanetData;
+	setShipLocation: Dispatch<SetStateAction<{ column: string; row: string }>>;
+	zoneData: { column: string; row: string };
 };
 
 export default function Planet({
 	planetData: { name, color, width, rings },
+	setShipLocation,
+	zoneData,
 }: Props) {
 	const planetName = name.toUpperCase();
 
+	function onPlanetClick() {
+		console.log(`${planetName} clicked`);
+		setShipLocation((prev) => {
+			console.log(prev);
+			return zoneData;
+		});
+	}
+
 	const basePlanet = (
-		<div className={styles.Planet} style={{ backgroundColor: color, width }}>
+		<button
+			className={styles.Planet}
+			style={{ backgroundColor: color, width }}
+			onClick={onPlanetClick}
+		>
 			<span>{planetName}</span>
-		</div>
+		</button>
 	);
 
 	const completePlanet = rings.length
