@@ -1,10 +1,6 @@
 /* PLANET */
 .Planet {
 	border-radius: 100rem;
-	border-style: none;
-
-	padding: 1rem;
-	overflow: hidden;
 
 	max-height: 100%;
 	max-width: 100%;
@@ -14,24 +10,16 @@
 
 	aspect-ratio: 1 / 1;
 
-	display: flex;
+	overflow: hidden;
 }
 
 /* PLANET TITLE */
 .Planet > span {
-	/* display: block; */
-	/* margin: auto; */
+	display: block;
+	margin: auto;
 
 	color: var(--white-one);
-	/* font-size: clamp(0.75rem, 5vw, 100%); */
+	font-size: clamp(0.75rem, 5vw, 100%);
 	font-style: italic;
-	/* text-shadow: 5px 5px 2px hsl(var(--hue-0), var(--sat-0), var(--light-20)); */
-	/* background-color: red; */
-	box-shadow: 0 0 10px 10px hsl(var(--hue-0), var(--sat-0), var(--light-60));
-
-	/* word-break: break-all; */
-
-	height: fit-content;
-	max-height: 100%;
-	/* overflow: hidden; */
+	text-shadow: 0 0 5px hsl(var(--hue-0), var(--sat-0), var(--light-20));
 }

@@ -2,9 +2,6 @@
 	border-radius: 100rem;
 	border-style: solid;
 
-	aspect-ratio: 1 / 1;
-	max-height: 100%;
-	max-width: 100%;
 	height: fit-content;
 	width: fit-content;
 }
