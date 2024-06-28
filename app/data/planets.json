@@ -40,8 +40,8 @@
 		"color": "violet",
 		"width": "5rem",
 		"orbit": {
-			"alignItems": "flex-end",
-			"justifyContent": "flex-end"
+			"alignItems": "center",
+			"justifyContent": "center"
 		},
 		"rings": [
 			{
