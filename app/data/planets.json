@@ -65,5 +65,47 @@
 			"justifyContent": "flex-start"
 		},
 		"rings": []
+	},
+	"koa2": {
+		"name": "KOA",
+		"color": "violet",
+		"width": "5rem",
+		"orbit": {
+			"alignItems": "center",
+			"justifyContent": "center"
+		},
+		"rings": []
+	},
+	"koa3": {
+		"name": "KOA",
+		"color": "violet",
+		"width": "5rem",
+		"orbit": {
+			"alignItems": "center",
+			"justifyContent": "center"
+		},
+		"rings": [
+			{
+				"ringColor": "hsl(40, 100%, 50%, 0.65)",
+				"ringPadding": "4px",
+				"ringWidth": "2px"
+			}
+		]
+	},
+	"koa4": {
+		"name": "KOA",
+		"color": "violet",
+		"width": "5rem",
+		"orbit": {
+			"alignItems": "center",
+			"justifyContent": "center"
+		},
+		"rings": [
+			{
+				"ringColor": "hsl(0, 100%, 40%, 0.85)",
+				"ringPadding": "5px",
+				"ringWidth": "4px"
+			}
+		]
 	}
 }

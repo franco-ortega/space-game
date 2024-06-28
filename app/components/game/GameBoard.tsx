@@ -13,13 +13,17 @@ import { useState } from 'react';
 export default function GameBoard() {
 	const [shipLocation, setShipLocation] = useState(zones.zone0);
 
-	const { doa, ioa, joa, koa, zoa } = planets;
+	const { doa, ioa, joa, koa, zoa, koa2, koa3, koa4 } = planets;
 
 	const PlanetJoa = createPlanet(joa, setShipLocation, zones.zone1);
 	const PlanetIoa = createPlanet(ioa, setShipLocation, zones.zone2);
 	const PlanetDoa = createPlanet(doa, setShipLocation, zones.zone7);
 	const PlanetKoa = createPlanet(koa, setShipLocation, zones.zone3);
 	const PlanetZoa = createPlanet(zoa, setShipLocation, zones.zone6);
+
+	const PlanetKoa2 = createPlanet(koa2, setShipLocation, zones.zone3);
+	const PlanetKoa3 = createPlanet(koa3, setShipLocation, zones.zone3);
+	const PlanetKoa4 = createPlanet(koa4, setShipLocation, zones.zone3);
 
 	const SpaceDockReady = function SpaceDockCreator() {
 		return (
@@ -71,14 +75,14 @@ export default function GameBoard() {
 				zoneData={{
 					zoneCoordinates: zones.zone4,
 				}}
-				Planet={EmptyZone}
+				Planet={PlanetKoa2}
 				setShipLocation={setShipLocation}
 			/>
 			<Zone
 				zoneData={{
 					zoneCoordinates: zones.zone5,
 				}}
-				Planet={EmptyZone}
+				Planet={PlanetKoa3}
 				setShipLocation={setShipLocation}
 			/>
 			<Zone
@@ -99,7 +103,7 @@ export default function GameBoard() {
 				zoneData={{
 					zoneCoordinates: zones.zone8,
 				}}
-				Planet={EmptyZone}
+				Planet={PlanetKoa4}
 				setShipLocation={setShipLocation}
 			/>
 		</main>
