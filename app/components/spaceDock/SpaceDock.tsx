@@ -1,9 +1,10 @@
 import { Dispatch, SetStateAction } from 'react';
+import { GridCoordinates } from '@/app/types/types';
 import styles from './SpaceDock.module.css';
 
 type Props = {
-	setShipLocation: Dispatch<SetStateAction<{ column: string; row: string }>>;
-	zoneData: { column: string; row: string };
+	setShipLocation: Dispatch<SetStateAction<GridCoordinates>>;
+	zoneData: GridCoordinates;
 };
 
 export default function SpaceDock({ setShipLocation, zoneData }: Props) {
