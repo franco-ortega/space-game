@@ -1,12 +1,12 @@
 import { Dispatch, SetStateAction } from 'react';
-import { PlanetData, RingData, ZoneData } from '@/app/types/types';
+import { GridCoordinates, PlanetData, RingData } from '@/app/types/types';
 import Ring from '../rings/Ring';
 import styles from './Planet.module.css';
 
 type Props = {
 	planetData: PlanetData;
-	setShipLocation: Dispatch<SetStateAction<{ column: string; row: string }>>;
-	zoneData: { column: string; row: string };
+	setShipLocation: Dispatch<SetStateAction<GridCoordinates>>;
+	zoneData: GridCoordinates;
 };
 
 export default function Planet({
