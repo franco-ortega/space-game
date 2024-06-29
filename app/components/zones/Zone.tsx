@@ -5,7 +5,7 @@ import styles from './Zone.module.css';
 type Props = {
 	Planet: ComponentType;
 	zoneData: ZoneData;
-	setShipLocation: Dispatch<SetStateAction<{ column: string; row: string }>>;
+	setShipLocation: Dispatch<SetStateAction<GridCoordinates>>;
 };
 
 export default function Zone({
